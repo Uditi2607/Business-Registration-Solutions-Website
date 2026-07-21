@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Our Services | Business Registration Solutions{% endblock %}
+
+{% block content %}
+{# Future service routes: the `as` form keeps this page available until each route is implemented. #}
+{% url 'gst_registration' as gst_registration_url %}
+{% url 'msme_registration' as msme_registration_url %}
+{% url 'fssai_registration' as fssai_registration_url %}
+{% url 'iec_registration' as iec_registration_url %}
+{% url 'pan_tan' as pan_tan_url %}
+{% url 'shop_establishment' as shop_establishment_url %}
+{% url 'startup_india' as startup_india_url %}
+{% url 'gem_registration' as gem_registration_url %}
+{% url 'aadhaar_services' as aadhaar_services_url %}
+{% url 'voter_id' as voter_id_url %}
+{% url 'passport_services' as passport_services_url %}
+{% url 'birth_certificate' as birth_certificate_url %}
+{% url 'death_certificate' as death_certificate_url %}
+{% url 'income_certificate' as income_certificate_url %}
+{% url 'domicile_certificate' as domicile_certificate_url %}
+{% url 'caste_certificate' as caste_certificate_url %}
+{% url 'ews_certificate' as ews_certificate_url %}
+{% url 'other_documents' as other_documents_url %}
+
+<!-- Services page introduction -->
+<section class="hero-section services-hero" aria-labelledby="services-page-title">
+    <div class="container position-relative">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+                <div class="services-hero-content">
+                    <span class="services-hero-badge"><i class="bi bi-rocket-takeoff-fill"></i> Professional Registration Services Across India</span>
+                    <span class="eyebrow">Our Services</span>
+                    <h1 id="services-page-title">One Stop Solution for Business Registration <span>&amp; Government Documentation Services</span></h1>
+                    <p class="hero-copy">Provide fast, reliable and expert assistance for registrations, licenses, certificates and compliance services across India.</p>
+                    <p class="services-hero-trust">Trusted by businesses, professionals and individuals across India for registrations, licenses, certificates and compliance services.</p>
+                    <div class="d-flex flex-wrap gap-3 hero-actions services-hero-actions">
+                        <a class="btn btn-success btn-lg" href="#business-services-title">Explore Services <i class="bi bi-arrow-right"></i></a>
+                        <a class="btn btn-outline-primary btn-lg" href="{% url 'contact' %}">Contact Us <i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="trust-badges services-trust-badges" aria-label="Our service commitments">
+                        <span><i class="bi bi-check-circle-fill"></i> 100% Online</span><span><i class="bi bi-check-circle-fill"></i> Expert Assistance</span><span><i class="bi bi-check-circle-fill"></i> Fast Processing</span><span><i class="bi bi-check-circle-fill"></i> Secure Documentation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="services-illustration" role="img" aria-label="Business registration and documentation services illustration">
+                    <span class="services-glow services-glow-blue"></span><span class="services-glow services-glow-green"></span><span class="services-floating-circle circle-one"></span><span class="services-floating-circle circle-two"></span><span class="services-floating-circle circle-three"></span>
+                    <div class="services-image-frame"><img src="{% static 'images/services-hero.png' %}" alt="Business registration and government documentation support" class="services-hero-image"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Business registration and compliance services -->
+<section class="section-padding services-section" aria-labelledby="business-services-title">
+    <div class="container">
+        <div class="section-heading text-center mx-auto">
+            <span class="eyebrow">For your business</span>
+            <h2 id="business-services-title">Business Registration &amp; Compliance Services</h2>
+            <p>Start and run your business with dependable support at every important compliance step.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-receipt-cutoff"></i></span><h3>GST Registration</h3><p>Get your GSTIN with clear guidance and timely application support.</p><a href="{{ gst_registration_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-building-check"></i></span><h3>MSME (Udyam) Registration</h3><p>Access Udyam recognition and benefits for your growing enterprise.</p><a href="{{ msme_registration_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-cup-hot"></i></span><h3>FSSAI Registration</h3><p>Keep your food business compliant with the appropriate licence.</p><a href="{{ fssai_registration_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-globe2"></i></span><h3>IEC Registration</h3><p>Begin importing or exporting with your official IEC registration.</p><a href="{{ iec_registration_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-card-text"></i></span><h3>PAN/TAN Services</h3><p>Apply, correct or update important PAN and TAN information.</p><a href="{{ pan_tan_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-shop"></i></span><h3>Shop &amp; Establishment Registration</h3><p>Register your establishment and meet local compliance needs.</p><a href="{{ shop_establishment_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-rocket-takeoff"></i></span><h3>Startup India Registration</h3><p>Take the first step towards startup recognition and benefits.</p><a href="{{ startup_india_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-bag-check"></i></span><h3>GeM Seller Registration</h3><p>Register to supply products and services through the GeM portal.</p><a href="{{ gem_registration_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+        </div>
+    </div>
+</section>
+
+<!-- Personal and government document services -->
+<section class="section-padding light-section" aria-labelledby="document-services-title">
+    <div class="container">
+        <div class="section-heading text-center mx-auto">
+            <span class="eyebrow">For individuals</span>
+            <h2 id="document-services-title">Personal &amp; Government Document Services</h2>
+            <p>Clear, supportive help with essential personal certificates and government documents.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-fingerprint"></i></span><h3>Aadhaar Services</h3><p>Get assistance with Aadhaar enrolment, updates and related requests.</p><a href="{{ aadhaar_services_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-person-vcard"></i></span><h3>Voter ID Services</h3><p>Apply for a new voter ID or update your existing details.</p><a href="{{ voter_id_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-passport"></i></span><h3>Passport Services</h3><p>Simple support for passport applications, renewals and corrections.</p><a href="{{ passport_services_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-balloon-heart"></i></span><h3>Birth Certificate</h3><p>Get reliable help for applications, corrections and certified copies.</p><a href="{{ birth_certificate_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-file-earmark-minus"></i></span><h3>Death Certificate</h3><p>Receive considerate guidance for essential documentation requests.</p><a href="{{ death_certificate_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-file-medical"></i></span><h3>Income Certificate</h3><p>Prepare and apply for your income certificate with confidence.</p><a href="{{ income_certificate_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-house-check"></i></span><h3>Domicile Certificate</h3><p>Get help applying for your official residence certificate.</p><a href="{{ domicile_certificate_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-person-badge"></i></span><h3>Caste Certificate</h3><p>Guidance for a clear and complete caste certificate application.</p><a href="{{ caste_certificate_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-patch-check"></i></span><h3>EWS Certificate</h3><p>Get helpful support while applying for your EWS certificate.</p><a href="{{ ews_certificate_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="service-card"><span class="service-icon"><i class="bi bi-files"></i></span><h3>Other Document Services</h3><p>Talk to our team about your other documentation requirements.</p><a href="{{ other_documents_url }}">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+        </div>
+    </div>
+</section>
+
+<!-- Services call to action -->
+<section class="cta-section" aria-labelledby="services-cta-title">
+    <div class="container">
+        <div class="cta-content text-center">
+            <span class="eyebrow eyebrow-light">Expert guidance</span>
+            <h2 id="services-cta-title">Need help choosing the right service?</h2>
+            <p>Our experts are here to guide you.</p>
+            <div class="d-flex justify-content-center flex-wrap gap-3">
+                <a class="btn btn-light btn-lg" href="tel:9457509243"><i class="bi bi-telephone-fill"></i> Call Now</a>
+                <a class="btn btn-outline-light btn-lg" href="https://wa.me/919457509243" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                <a class="btn btn-outline-light btn-lg" href="{% url 'contact' %}"><i class="bi bi-envelope-fill"></i> Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

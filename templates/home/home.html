@@ -1,46 +1,9 @@
 {% extends 'base.html' %}
-{% load static %}
 
 {% block title %}Business Registration Solutions | Home{% endblock %}
 
 {% block content %}
-<link rel="stylesheet" href="{% static 'css/style.css' %}">
-
-<!-- Sticky navigation -->
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top site-navbar" aria-label="Main navigation">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="#home" aria-label="Business Registration Solutions home">
-                <span class="brand-mark"><i class="bi bi-buildings-fill" aria-hidden="true"></i></span>
-                <span class="brand-name">Business Registration <strong>Solutions</strong></span>
-            </a>
-
-            <div class="d-flex align-items-center gap-2 order-lg-3">
-                <a class="btn btn-outline-primary nav-action d-none d-sm-inline-flex" href="tel:9457509243"><i class="bi bi-telephone-fill"></i><span>Call</span></a>
-                <a class="btn btn-success nav-action d-none d-sm-inline-flex" href="https://wa.me/919457509243" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i><span>WhatsApp</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-
-            <div class="collapse navbar-collapse order-lg-2" id="mainNavigation">
-                <ul class="navbar-nav ms-lg-auto me-lg-4 align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-                <div class="d-flex gap-2 d-sm-none py-3">
-                    <a class="btn btn-outline-primary nav-action" href="tel:9457509243"><i class="bi bi-telephone-fill"></i> Call</a>
-                    <a class="btn btn-success nav-action" href="https://wa.me/919457509243" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
-
-<main id="home">
+<div id="home">
     <!-- Hero section -->
     <section class="hero-section" aria-labelledby="hero-title">
         <div class="container position-relative">
@@ -122,10 +85,5 @@
 
     <!-- Call to action -->
     <section class="cta-section" id="contact" aria-labelledby="cta-title"><div class="container"><div class="cta-content text-center"><span class="eyebrow eyebrow-light">Let's get started</span><h2 id="cta-title">Need Help With Registration?</h2><p>Speak with our experts today and take your next step with confidence.</p><div class="d-flex justify-content-center flex-wrap gap-3"><a class="btn btn-light btn-lg" href="tel:9457509243"><i class="bi bi-telephone-fill"></i> Call Now</a><a class="btn btn-outline-light btn-lg" href="https://wa.me/919457509243" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a></div></div></div></section>
-</main>
-
-<!-- Footer -->
-<footer class="site-footer"><div class="container"><div class="row g-5"><div class="col-lg-4"><a class="footer-brand" href="#home"><span class="brand-mark"><i class="bi bi-buildings-fill"></i></span> Business Registration <strong>Solutions</strong></a><p class="footer-copy">Making business registrations and government documentation easier, clearer and more accessible.</p><div class="social-links"><a href="#home" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#home" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#home" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a><a href="#home" aria-label="YouTube"><i class="bi bi-youtube"></i></a></div></div><div class="col-6 col-lg-2"><h2>Quick Links</h2><ul><li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#services">Services</a></li><li><a href="#testimonials">Blog</a></li></ul></div><div class="col-6 col-lg-2"><h2>Services</h2><ul><li><a href="#services">GST Registration</a></li><li><a href="#services">MSME Registration</a></li><li><a href="#services">FSSAI Registration</a></li><li><a href="#services">PAN/TAN Services</a></li></ul></div><div class="col-lg-4"><h2>Contact Information</h2><ul class="contact-list"><li><i class="bi bi-telephone-fill"></i><a href="tel:9457509243">9457509243</a></li><li><i class="bi bi-whatsapp"></i><a href="https://wa.me/919457509243" target="_blank" rel="noopener">Chat on WhatsApp</a></li><li><i class="bi bi-envelope-fill"></i><a href="mailto:info@businessregistrationsolutions.com">Send us an email</a></li></ul></div></div><div class="footer-bottom"><span>© {% now "Y" %} Business Registration Solutions. All rights reserved.</span><span>Built for your business journey.</span></div></div></footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</div>
 {% endblock %}
