@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Business Registration Solutions | Home{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<!-- Sticky navigation -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top site-navbar" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#home" aria-label="Business Registration Solutions home">
+                <span class="brand-mark"><i class="bi bi-buildings-fill" aria-hidden="true"></i></span>
+                <span class="brand-name">Business Registration <strong>Solutions</strong></span>
+            </a>
+
+            <div class="d-flex align-items-center gap-2 order-lg-3">
+                <a class="btn btn-outline-primary nav-action d-none d-sm-inline-flex" href="tel:9457509243"><i class="bi bi-telephone-fill"></i><span>Call</span></a>
+                <a class="btn btn-success nav-action d-none d-sm-inline-flex" href="https://wa.me/919457509243" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i><span>WhatsApp</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse order-lg-2" id="mainNavigation">
+                <ul class="navbar-nav ms-lg-auto me-lg-4 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-2 d-sm-none py-3">
+                    <a class="btn btn-outline-primary nav-action" href="tel:9457509243"><i class="bi bi-telephone-fill"></i> Call</a>
+                    <a class="btn btn-success nav-action" href="https://wa.me/919457509243" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="home">
+    <!-- Hero section -->
+    <section class="hero-section" aria-labelledby="hero-title">
+        <div class="container position-relative">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <span class="eyebrow"><i class="bi bi-patch-check-fill"></i> Trusted business support</span>
+                    <h1 id="hero-title">Your Trusted Partner for <span>Business Registration</span> &amp; Government Documentation</h1>
+                    <p class="hero-copy">From registrations to certificates, our experts make government documentation simple, secure and completely stress-free for you.</p>
+                    <div class="d-flex flex-wrap gap-3 hero-actions">
+                        <a class="btn btn-primary btn-lg" href="#services">Get Started <i class="bi bi-arrow-right"></i></a>
+                        <a class="btn btn-light btn-lg whatsapp-btn" href="https://wa.me/919457509243" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp Now</a>
+                    </div>
+                    <div class="trust-badges" aria-label="Our service commitments">
+                        <span><i class="bi bi-check-circle-fill"></i> 100% Online</span>
+                        <span><i class="bi bi-check-circle-fill"></i> Fast Processing</span>
+                        <span><i class="bi bi-check-circle-fill"></i> Expert Guidance</span>
+                        <span><i class="bi bi-check-circle-fill"></i> Secure &amp; Confidential</span>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-visual" role="img" aria-label="Illustration of secure business documentation">
+                        <div class="visual-orb orb-one"></div><div class="visual-orb orb-two"></div>
+                        <div class="document-card card-main">
+                            <div class="document-top"><span class="document-icon"><i class="bi bi-file-earmark-check-fill"></i></span><i class="bi bi-three-dots"></i></div>
+                            <span class="doc-label">REGISTRATION COMPLETE</span>
+                            <h3>Your business is ready to grow.</h3>
+                            <div class="document-lines"><span></span><span></span><span></span></div>
+                            <div class="verified-line"><i class="bi bi-shield-check"></i> Verified &amp; secure</div>
+                        </div>
+                        <div class="floating-card card-support"><span><i class="bi bi-headset"></i></span><div><strong>Expert Support</strong><small>Here when you need us</small></div></div>
+                        <div class="floating-card card-success"><i class="bi bi-check-lg"></i><span>Application submitted</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section -->
+    <section class="section-padding services-section" id="services" aria-labelledby="services-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">What we do</span>
+                <h2 id="services-title">Our Services</h2>
+                <p>Everything you need to start, manage and document your business journey—under one reliable roof.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 col-xl-3"><article class="service-card"><span class="service-icon"><i class="bi bi-receipt-cutoff"></i></span><h3>GST Registration</h3><p>Get your GSTIN with clear guidance and timely filing support.</p><a href="#contact">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+                <div class="col-md-6 col-lg-4 col-xl-3"><article class="service-card"><span class="service-icon"><i class="bi bi-building-check"></i></span><h3>MSME Registration</h3><p>Unlock Udyam benefits and formal recognition for your enterprise.</p><a href="#contact">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+                <div class="col-md-6 col-lg-4 col-xl-3"><article class="service-card"><span class="service-icon"><i class="bi bi-cup-hot"></i></span><h3>FSSAI Registration</h3><p>Stay food-business compliant with the right FSSAI licence.</p><a href="#contact">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+                <div class="col-md-6 col-lg-4 col-xl-3"><article class="service-card"><span class="service-icon"><i class="bi bi-globe2"></i></span><h3>IEC Registration</h3><p>Start importing or exporting with your IEC registration.</p><a href="#contact">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+                <div class="col-md-6 col-lg-4 col-xl-3"><article class="service-card"><span class="service-icon"><i class="bi bi-card-text"></i></span><h3>PAN/TAN Services</h3><p>Apply, correct or update your PAN and TAN documents easily.</p><a href="#contact">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+                <div class="col-md-6 col-lg-4 col-xl-3"><article class="service-card"><span class="service-icon"><i class="bi bi-rocket-takeoff"></i></span><h3>Startup India</h3><p>Take the first step towards startup recognition and benefits.</p><a href="#contact">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+                <div class="col-md-6 col-lg-4 col-xl-3"><article class="service-card"><span class="service-icon"><i class="bi bi-shop"></i></span><h3>GeM Registration</h3><p>Register to supply products and services on the GeM portal.</p><a href="#contact">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+                <div class="col-md-6 col-lg-4 col-xl-3"><article class="service-card"><span class="service-icon"><i class="bi bi-passport"></i></span><h3>Passport Assistance</h3><p>Simple help with new passport applications and renewals.</p><a href="#contact">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+                <div class="col-md-6 col-lg-4 col-xl-3"><article class="service-card"><span class="service-icon"><i class="bi bi-person-vcard"></i></span><h3>Voter ID</h3><p>Get support for new voter ID registration and updates.</p><a href="#contact">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+                <div class="col-md-6 col-lg-4 col-xl-3"><article class="service-card"><span class="service-icon"><i class="bi bi-file-medical"></i></span><h3>Income Certificate</h3><p>Prepare and apply for your income certificate with confidence.</p><a href="#contact">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+                <div class="col-md-6 col-lg-4 col-xl-3"><article class="service-card"><span class="service-icon"><i class="bi bi-house-check"></i></span><h3>Domicile Certificate</h3><p>Get help applying for your official residence certificate.</p><a href="#contact">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+                <div class="col-md-6 col-lg-4 col-xl-3"><article class="service-card"><span class="service-icon"><i class="bi bi-balloon-heart"></i></span><h3>Birth Certificate</h3><p>Reliable assistance for birth certificate applications and copies.</p><a href="#contact">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+                <div class="col-md-6 col-lg-4 col-xl-3"><article class="service-card"><span class="service-icon"><i class="bi bi-file-earmark-minus"></i></span><h3>Death Certificate</h3><p>Compassionate guidance for essential documentation requests.</p><a href="#contact">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+                <div class="col-md-6 col-lg-4 col-xl-3"><article class="service-card"><span class="service-icon"><i class="bi bi-fingerprint"></i></span><h3>Aadhaar Services</h3><p>Support for Aadhaar enrolment, update and related services.</p><a href="#contact">Learn More <i class="bi bi-arrow-up-right"></i></a></article></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why choose us -->
+    <section class="section-padding light-section" id="about" aria-labelledby="why-title"><div class="container"><div class="section-heading text-center mx-auto"><span class="eyebrow">Our promise</span><h2 id="why-title">Why Choose Us</h2><p>Professional support that keeps every step clear, quick and secure.</p></div><div class="row g-4"><div class="col-sm-6 col-lg-3"><article class="feature-card"><i class="bi bi-lightning-charge-fill"></i><h3>Fast Processing</h3><p>We streamline your application with focused, timely support.</p></article></div><div class="col-sm-6 col-lg-3"><article class="feature-card"><i class="bi bi-person-workspace"></i><h3>Expert Assistance</h3><p>Get helpful guidance from experienced documentation experts.</p></article></div><div class="col-sm-6 col-lg-3"><article class="feature-card"><i class="bi bi-cash-stack"></i><h3>Transparent Pricing</h3><p>Clear pricing and honest communication, with no surprises.</p></article></div><div class="col-sm-6 col-lg-3"><article class="feature-card"><i class="bi bi-shield-lock-fill"></i><h3>Secure Documentation</h3><p>Your personal information is handled with utmost care.</p></article></div></div></div></section>
+
+    <!-- Process timeline -->
+    <section class="section-padding" aria-labelledby="process-title"><div class="container"><div class="section-heading text-center mx-auto"><span class="eyebrow">Simple process</span><h2 id="process-title">How It Works</h2><p>A clear path from your first enquiry to receiving your certificate.</p></div><div class="process-timeline"><article class="process-step"><span class="step-number">01</span><span class="step-icon"><i class="bi bi-ui-checks-grid"></i></span><h3>Choose Service</h3><p>Select the service you need.</p></article><span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span><article class="process-step"><span class="step-number">02</span><span class="step-icon"><i class="bi bi-file-earmark-arrow-up"></i></span><h3>Submit Documents</h3><p>Share the required documents.</p></article><span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span><article class="process-step"><span class="step-number">03</span><span class="step-icon"><i class="bi bi-patch-check"></i></span><h3>Verification</h3><p>We carefully review the details.</p></article><span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span><article class="process-step"><span class="step-number">04</span><span class="step-icon"><i class="bi bi-award"></i></span><h3>Receive Certificate</h3><p>Get your completed certificate.</p></article></div></div></section>
+
+    <!-- Statistics -->
+    <section class="statistics-section" aria-label="Our impact"><div class="container"><div class="row text-center g-4"><div class="col-6 col-lg-3"><div class="stat-item"><strong>5000<span>+</span></strong><p>Clients Served</p></div></div><div class="col-6 col-lg-3"><div class="stat-item"><strong>100<span>+</span></strong><p>Services</p></div></div><div class="col-6 col-lg-3"><div class="stat-item"><strong>98<span>%</span></strong><p>Success Rate</p></div></div><div class="col-6 col-lg-3"><div class="stat-item"><strong>24<span>x7</span></strong><p>Support</p></div></div></div></div></section>
+
+    <!-- Testimonials -->
+    <section class="section-padding light-section" id="testimonials" aria-labelledby="testimonials-title"><div class="container"><div class="section-heading text-center mx-auto"><span class="eyebrow">Client stories</span><h2 id="testimonials-title">Trusted by People Like You</h2><p>Thoughtful service and clear guidance make a meaningful difference.</p></div><div class="row g-4"><div class="col-lg-4"><figure class="testimonial-card"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“The team made my GST registration feel effortless. Every question was answered clearly and the process was much faster than I expected.”</blockquote><figcaption><span class="avatar">RS</span><div><strong>Rahul Sharma</strong><small>Small Business Owner</small></div></figcaption></figure></div><div class="col-lg-4"><figure class="testimonial-card"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“Professional, responsive and genuinely helpful. They guided me through the paperwork for my startup from beginning to end.”</blockquote><figcaption><span class="avatar">PK</span><div><strong>Priya Kapoor</strong><small>Entrepreneur</small></div></figcaption></figure></div><div class="col-lg-4"><figure class="testimonial-card"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote>“I appreciated the transparent communication. My documents were handled securely and my certificate arrived without any stress.”</blockquote><figcaption><span class="avatar">AM</span><div><strong>Amit Mishra</strong><small>Business Consultant</small></div></figcaption></figure></div></div></div></section>
+
+    <!-- FAQ -->
+    <section class="section-padding" aria-labelledby="faq-title"><div class="container"><div class="row justify-content-center"><div class="col-lg-9"><div class="section-heading text-center mx-auto"><span class="eyebrow">Common questions</span><h2 id="faq-title">Frequently Asked Questions</h2><p>Quick answers to help you take the next step with confidence.</p></div><div class="accordion faq-accordion" id="homeFaq"><div class="accordion-item"><h3 class="accordion-header" id="faqOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answerOne" aria-expanded="true" aria-controls="answerOne">How do I get started with a registration service?</button></h3><div id="answerOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#homeFaq"><div class="accordion-body">Choose a service and contact us by phone or WhatsApp. Our team will explain the documents and the next steps.</div></div></div><div class="accordion-item"><h3 class="accordion-header" id="faqTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answerTwo" aria-expanded="false" aria-controls="answerTwo">Which documents will I need to submit?</button></h3><div id="answerTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#homeFaq"><div class="accordion-body">Requirements vary by service. We will share a clear, service-specific document checklist before you begin.</div></div></div><div class="accordion-item"><h3 class="accordion-header" id="faqThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answerThree" aria-expanded="false" aria-controls="answerThree">How long will my application take?</button></h3><div id="answerThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#homeFaq"><div class="accordion-body">Timelines depend on the service and government processing. Our team will keep you informed throughout.</div></div></div><div class="accordion-item"><h3 class="accordion-header" id="faqFour"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answerFour" aria-expanded="false" aria-controls="answerFour">Is my information secure?</button></h3><div id="answerFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#homeFaq"><div class="accordion-body">Yes. We treat your personal and business documentation with care and confidentiality.</div></div></div><div class="accordion-item"><h3 class="accordion-header" id="faqFive"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answerFive" aria-expanded="false" aria-controls="answerFive">Can I track my application?</button></h3><div id="answerFive" class="accordion-collapse collapse" aria-labelledby="faqFive" data-bs-parent="#homeFaq"><div class="accordion-body">Our support team provides timely updates and is always available to answer questions about your application.</div></div></div></div></div></div></div></section>
+
+    <!-- Call to action -->
+    <section class="cta-section" id="contact" aria-labelledby="cta-title"><div class="container"><div class="cta-content text-center"><span class="eyebrow eyebrow-light">Let's get started</span><h2 id="cta-title">Need Help With Registration?</h2><p>Speak with our experts today and take your next step with confidence.</p><div class="d-flex justify-content-center flex-wrap gap-3"><a class="btn btn-light btn-lg" href="tel:9457509243"><i class="bi bi-telephone-fill"></i> Call Now</a><a class="btn btn-outline-light btn-lg" href="https://wa.me/919457509243" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a></div></div></div></section>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer"><div class="container"><div class="row g-5"><div class="col-lg-4"><a class="footer-brand" href="#home"><span class="brand-mark"><i class="bi bi-buildings-fill"></i></span> Business Registration <strong>Solutions</strong></a><p class="footer-copy">Making business registrations and government documentation easier, clearer and more accessible.</p><div class="social-links"><a href="#home" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#home" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#home" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a><a href="#home" aria-label="YouTube"><i class="bi bi-youtube"></i></a></div></div><div class="col-6 col-lg-2"><h2>Quick Links</h2><ul><li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#services">Services</a></li><li><a href="#testimonials">Blog</a></li></ul></div><div class="col-6 col-lg-2"><h2>Services</h2><ul><li><a href="#services">GST Registration</a></li><li><a href="#services">MSME Registration</a></li><li><a href="#services">FSSAI Registration</a></li><li><a href="#services">PAN/TAN Services</a></li></ul></div><div class="col-lg-4"><h2>Contact Information</h2><ul class="contact-list"><li><i class="bi bi-telephone-fill"></i><a href="tel:9457509243">9457509243</a></li><li><i class="bi bi-whatsapp"></i><a href="https://wa.me/919457509243" target="_blank" rel="noopener">Chat on WhatsApp</a></li><li><i class="bi bi-envelope-fill"></i><a href="mailto:info@businessregistrationsolutions.com">Send us an email</a></li></ul></div></div><div class="footer-bottom"><span>© {% now "Y" %} Business Registration Solutions. All rights reserved.</span><span>Built for your business journey.</span></div></div></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+{% endblock %}
