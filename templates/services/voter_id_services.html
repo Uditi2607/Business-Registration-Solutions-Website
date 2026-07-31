@@ -1,0 +1,648 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Voter ID Services | New Voter Card, Correction, Shift & Replacement | Business Registration Solutions{% endblock %}
+
+{% block content %}
+<article class="service-detail">
+    <!-- Hero section -->
+    <section class="hero-section services-hero" aria-labelledby="voter-hero-title">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <div class="services-hero-content">
+                        <span class="services-hero-badge"><i class="bi bi-person-vcard-fill"></i> Election Commission Assistance</span>
+                        <span class="eyebrow">Complete ECI Voter Services</span>
+                        <h1 id="voter-hero-title">Voter ID Card <span>Services &amp; Assistance</span></h1>
+                        <p class="hero-copy">Expert guidance for new Voter ID registration (Form 6), EPIC detail corrections (Form 8), address change &amp; constituency transfer, duplicate card replacement, deletion of entries, and e-EPIC downloads.</p>
+                        <div class="d-flex flex-wrap gap-3 hero-actions services-hero-actions">
+                            <a class="btn btn-success btn-lg" href="{% url 'contact' %}">Apply / Update Voter ID <i class="bi bi-arrow-right"></i></a>
+                            <a class="btn btn-outline-primary btn-lg" href="tel:9457509243">Talk to an Expert <i class="bi bi-telephone"></i></a>
+                        </div>
+                        <div class="trust-badges services-trust-badges">
+                            <span><i class="bi bi-check-circle-fill"></i> NVSP Portal Filing</span>
+                            <span><i class="bi bi-check-circle-fill"></i> Form 6, 6A, 7 &amp; 8 Support</span>
+                            <span><i class="bi bi-check-circle-fill"></i> BLO Field Visit Guidance</span>
+                            <span><i class="bi bi-check-circle-fill"></i> Digital e-EPIC Download</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="services-illustration">
+                        <span class="services-glow services-glow-blue"></span>
+                        <span class="services-glow services-glow-green"></span>
+                        <span class="services-floating-circle circle-one"></span>
+                        <span class="services-floating-circle circle-two"></span>
+                        <div class="services-image-frame">
+                            <img src="{% static 'images/services-hero.png' %}" alt="Voter ID services assistance" class="services-hero-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview & What is Voter ID? -->
+    <section class="section-padding" aria-labelledby="what-is-voter">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="section-heading mb-0">
+                        <span class="eyebrow">Constitutional Right</span>
+                        <h2 id="what-is-voter">Overview of Voter ID (EPIC) Services</h2>
+                        <p>The Electors Photo Identity Card (EPIC), commonly known as Voter ID card, is an official identity document issued by the Election Commission of India (ECI) to eligible Indian citizens. It serves as proof of citizenship, age, address, and democratic voting entitlement.</p>
+                        <p>Whether you have turned 18 and want to register as a first-time voter, moved to a new constituency, or need to correct spelling errors in your existing voter card, our dedicated consultants assist you through the National Voters' Services Portal (NVSP) and State Election Commission procedures.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="detail-highlight">
+                        <i class="bi bi-patch-check-fill"></i>
+                        <h3>Seamless Electoral Registration</h3>
+                        <p>We ensure your voter application is submitted under the correct ECI form category with complete supporting documents for swift approval.</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Precise form selection (Form 6, 6A, 7, or 8)</li>
+                            <li><i class="bi bi-check2"></i> Assembly constituency &amp; polling station mapping</li>
+                            <li><i class="bi bi-check2"></i> Coordination support during BLO (Booth Level Officer) visits</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services We Offer -->
+    <section class="section-padding light-section" aria-labelledby="services-offered-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Full Assistance Range</span>
+                <h2 id="services-offered-title">Voter ID Services We Provide</h2>
+                <p>We handle all official voter registration, modification, transfer, and replacement services.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-person-badge-fill"></i>
+                        <h3>New Voter ID (Form 6)</h3>
+                        <p>First-time voter registration for Indian citizens attaining 18 years of age as of the qualifying date.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-globe"></i>
+                        <h3>NRI Voter Registration (Form 6A)</h3>
+                        <p>Registration assistance for Overseas Indian citizens living abroad who hold a valid Indian passport.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-pencil-square"></i>
+                        <h3>EPIC Details Correction (Form 8)</h3>
+                        <p>Correction of spelling errors in Name, Father's/Spouse's Name, Date of Birth, Gender, or Photo update.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <h3>Address Change / Shifting (Form 8)</h3>
+                        <p>Updating your residential address within the same constituency or shifting to a new assembly constituency.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-copy"></i>
+                        <h3>Duplicate Voter Card (Replacement)</h3>
+                        <p>Application for replacement EPIC card in case of lost, stolen, destroyed, or mutilated voter cards.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <h3>Voter ID Transfer</h3>
+                        <p>Seamless transfer of your voter registration record when relocating to a new city or state.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-person-x-fill"></i>
+                        <h3>Deletion / Objection of Entry (Form 7)</h3>
+                        <p>Application for deleting entries of deceased family members or duplicate voter listings.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-download"></i>
+                        <h3>e-EPIC Digital Card Download</h3>
+                        <p>Guidance to download official PDF e-EPIC voter card with secure QR code verification.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-search"></i>
+                        <h3>Status Tracking &amp; Electoral Search</h3>
+                        <p>Search your name on Electoral Roll (voter list) and track reference application status.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Can Apply & Eligibility -->
+    <section class="section-padding" aria-labelledby="eligibility-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Applicant Criteria</span>
+                <h2 id="eligibility-title">Who Can Apply for Voter ID Services?</h2>
+                <p>Citizens fulfilling ECI age and residence requirements can register or update their voter profile.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-person-check"></i>
+                        <h3>First-Time Voters (18+)</h3>
+                        <p>Indian citizens who have reached 18 years of age on or before the qualifying ECI cutoff date.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-house-door"></i>
+                        <h3>Relocated Residents</h3>
+                        <p>Individuals shifting their permanent or current residence to a new house or new constituency.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-globe2"></i>
+                        <h3>Overseas Citizens (NRIs)</h3>
+                        <p>Indian passport holders residing abroad for employment or education who haven't acquired foreign citizenship.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-exclamation-square"></i>
+                        <h3>Cardholders with Errors</h3>
+                        <p>Existing voter cardholders needing corrections in name spelling, photo clarity, or relative details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Required Documents -->
+    <section class="section-padding light-section" aria-labelledby="documents-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Document Checklist</span>
+                <h2 id="documents-title">Documents Required for Voter ID Services</h2>
+                <p>Ensure clear scanned copies of identity, age, and address proofs are submitted.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <section class="document-list-card">
+                        <h3><i class="bi bi-calendar-event"></i> Proof of Age / DoB</h3>
+                        <ul>
+                            <li>Aadhaar Card / Indian Passport</li>
+                            <li>PAN Card / Driving License</li>
+                            <li>Birth Certificate issued by Municipal Body</li>
+                            <li>Class 10 Marksheet / School Leaving Certificate</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-lg-4">
+                    <section class="document-list-card">
+                        <h3><i class="bi bi-geo-alt"></i> Proof of Ordinary Residence</h3>
+                        <ul>
+                            <li>Aadhaar Card / Indian Passport</li>
+                            <li>Water / Electricity / Gas Bill (recent 3 months)</li>
+                            <li>Bank Passbook with photo &amp; address stamp</li>
+                            <li>Registered Rent Agreement / Property Tax Receipt</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-lg-4">
+                    <section class="document-list-card">
+                        <h3><i class="bi bi-image"></i> Personal &amp; Existing EPIC Proofs</h3>
+                        <ul>
+                            <li>Recent Passport-Size Photograph (White Background)</li>
+                            <li>Existing Voter ID (EPIC) Number &amp; Card Copy (for Form 8/Replacement)</li>
+                            <li>Family Member's EPIC Number (for booth mapping)</li>
+                            <li>Police FIR copy (for lost duplicate card requests)</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <p class="official-note mt-4 mb-0">
+                <i class="bi bi-info-circle-fill"></i> Note: Requirements, fees and procedures may vary depending upon your State, Union Territory or issuing authority. Our experts verify the latest applicable requirements before submission.
+            </p>
+        </div>
+    </section>
+
+    <!-- Step-by-Step Process -->
+    <section class="section-padding" aria-labelledby="process-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Clear Workflow</span>
+                <h2 id="process-title">Step-by-Step Voter ID Process</h2>
+                <p>We guide your application through NVSP portal submission and field verification.</p>
+            </div>
+            <div class="process-timeline">
+                <article class="process-step">
+                    <span class="step-number">01</span>
+                    <span class="step-icon"><i class="bi bi-file-earmark-text"></i></span>
+                    <h3>Form Selection</h3>
+                    <p>Select Form 6, 6A, 7, or 8 based on need.</p>
+                </article>
+                <span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span>
+                <article class="process-step">
+                    <span class="step-number">02</span>
+                    <span class="step-icon"><i class="bi bi-search"></i></span>
+                    <h3>Doc Verification</h3>
+                    <p>Audit age &amp; address proof formatting.</p>
+                </article>
+                <span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span>
+                <article class="process-step">
+                    <span class="step-number">03</span>
+                    <span class="step-icon"><i class="bi bi-send-check"></i></span>
+                    <h3>NVSP Portal Filing</h3>
+                    <p>Submit application &amp; get Reference ID.</p>
+                </article>
+                <span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span>
+                <article class="process-step">
+                    <span class="step-number">04</span>
+                    <span class="step-icon"><i class="bi bi-person-check"></i></span>
+                    <h3>BLO Field Verification</h3>
+                    <p>Booth Level Officer field visit &amp; ERO check.</p>
+                </article>
+                <span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span>
+                <article class="process-step">
+                    <span class="step-number">05</span>
+                    <span class="step-icon"><i class="bi bi-award"></i></span>
+                    <h3>EPIC Issue &amp; e-EPIC</h3>
+                    <p>Card printing &amp; Speed Post delivery.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estimated Processing Time & Government Charges / Service Charges -->
+    <!-- Prices will later be fetched dynamically from database -->
+    <section class="section-padding light-section" aria-labelledby="pricing-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Packages &amp; Timelines</span>
+                <h2 id="pricing-title">Voter ID Service Packages</h2>
+                <p>New voter registrations and address transfers take 15–45 days depending on ERO/BLO schedules. Official ECI portal registration has zero government fee. Select an assisted package below.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <section class="pricing-card">
+                        <h3>New Voter (Form 6)</h3>
+                        <p class="price">₹XXX</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Form 6 Portal Application Filing</li>
+                            <li><i class="bi bi-check2"></i> Age &amp; Address Document Verification</li>
+                            <li><i class="bi bi-check2"></i> Assembly Booth Mapping Guidance</li>
+                            <li><i class="bi bi-check2"></i> NVSP Reference Number Generation</li>
+                            <li><i class="bi bi-check2"></i> e-EPIC Download Support</li>
+                        </ul>
+                        <a class="btn btn-outline-primary w-100" href="{% url 'contact' %}">Choose New Voter Plan</a>
+                    </section>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <section class="pricing-card pricing-card-featured">
+                        <span>Most Popular</span>
+                        <h3>Correction / Address Shift</h3>
+                        <p class="price">₹XXX</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Form 8 Filing (Correction / Address Transfer)</li>
+                            <li><i class="bi bi-check2"></i> Document &amp; Photo Audit</li>
+                            <li><i class="bi bi-check2"></i> Shifting of Residence Application</li>
+                            <li><i class="bi bi-check2"></i> BLO Verification Coordination Support</li>
+                            <li><i class="bi bi-check2"></i> Status Tracking till Dispatch</li>
+                        </ul>
+                        <a class="btn btn-success w-100" href="{% url 'contact' %}">Choose Standard</a>
+                    </section>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <section class="pricing-card">
+                        <h3>Duplicate / NRI (Form 6A)</h3>
+                        <p class="price">₹XXX</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Lost EPIC Replacement / Form 6A Filing</li>
+                            <li><i class="bi bi-check2"></i> Police FIR &amp; Loss Declaration Guidance</li>
+                            <li><i class="bi bi-check2"></i> Overseas Indian Voter Documentation</li>
+                            <li><i class="bi bi-check2"></i> Dedicated Executive Assistance</li>
+                            <li><i class="bi bi-check2"></i> Physical Card Delivery Tracking</li>
+                        </ul>
+                        <a class="btn btn-outline-primary w-100" href="{% url 'contact' %}">Choose Duplicate / NRI</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Problems & Solutions -->
+    <section class="section-padding" aria-labelledby="problems-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Troubleshooting</span>
+                <h2 id="problems-title">Common Voter ID Problems &amp; Our Solutions</h2>
+                <p>We help resolve common delays and rejection issues faced by applicants.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="detail-highlight h-100">
+                        <i class="bi bi-person-dash-fill text-warning"></i>
+                        <h3>Delayed BLO Verification</h3>
+                        <p><strong>Problem:</strong> Application remains pending at "Field Verified by BLO" status for weeks without progress.</p>
+                        <p><strong>Solution:</strong> We help you locate your assigned Booth Level Officer (BLO) and Electoral Registration Officer (ERO) details for status escalation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-highlight h-100">
+                        <i class="bi bi-spellcheck text-danger"></i>
+                        <h3>Name Misspelling in Voter List</h3>
+                        <p><strong>Problem:</strong> Name or father's name spelled incorrectly in English or vernacular regional language on the electoral roll.</p>
+                        <p><strong>Solution:</strong> We file Form 8 for correction of entries with exact transliteration to ensure 100% legal accuracy.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-highlight h-100">
+                        <i class="bi bi-exclamation-diamond-fill text-danger"></i>
+                        <h3>Duplicate Registration Rejection</h3>
+                        <p><strong>Problem:</strong> Application rejected because applicant already holds an EPIC card in their previous hometown.</p>
+                        <p><strong>Solution:</strong> We file a simultaneous transfer request under Form 8 to safely migrate your voter record without duplication.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-highlight h-100">
+                        <i class="bi bi-mailbox text-primary"></i>
+                        <h3>Physical Card Undelivered</h3>
+                        <p><strong>Problem:</strong> Application accepted online, but physical EPIC card not received via Speed Post.</p>
+                        <p><strong>Solution:</strong> We guide you in downloading your official e-EPIC PDF and applying for a replacement print card.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips for Faster Approval -->
+    <section class="section-padding light-section" aria-labelledby="tips-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Expert Advice</span>
+                <h2 id="tips-title">Tips for Faster Voter ID Approval</h2>
+                <p>Follow these practical recommendations to expedite your EPIC registration.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-geo"></i>
+                        <h3>Provide Family EPIC</h3>
+                        <p>Mention a family member's EPIC number living in the same house to map your correct booth instantly.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-image"></i>
+                        <h3>Clear Photo Scan</h3>
+                        <p>Upload a crisp passport photo with white background to avoid photo rejection by the ERO examiner.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-phone"></i>
+                        <h3>Link Mobile Number</h3>
+                        <p>Enter your active mobile number in Form 6/8 to enable e-EPIC PDF download immediately upon approval.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-house-check"></i>
+                        <h3>Address Proof Match</h3>
+                        <p>Ensure the address on your utility bill or bank passbook matches your current residence location.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-padding" aria-labelledby="why-us-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Our Experience</span>
+                <h2 id="why-us-title">Why Choose Business Registration Solutions?</h2>
+                <p>Dependable support for your democratic registration and identity needs.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-file-earmark-check"></i>
+                        <h3>Accurate Form Selection</h3>
+                        <p>We ensure your request is submitted under the correct form category (Form 6, 6A, 7, or 8).</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-search"></i>
+                        <h3>Electoral Roll Verification</h3>
+                        <p>We search state voter databases to verify existing EPIC status and constituency mapping.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-laptop"></i>
+                        <h3>100% Online Filing</h3>
+                        <p>Complete execution remotely from the comfort of your home without visiting government offices.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-lightning-charge"></i>
+                        <h3>Status Tracking</h3>
+                        <p>Continuous monitoring of your NVSP reference number until physical card delivery.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-headset"></i>
+                        <h3>Dedicated Support</h3>
+                        <p>Helpful guidance during BLO field visits and address shifting across states.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-receipt"></i>
+                        <h3>Transparent Fees</h3>
+                        <p>Clear, fixed pricing with no hidden charges or unexpected surprise fees.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (8-10 Questions) -->
+    <section class="section-padding light-section" aria-labelledby="faq-title">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="section-heading text-center mx-auto">
+                        <span class="eyebrow">Common Questions</span>
+                        <h2 id="faq-title">Voter ID Services FAQs</h2>
+                    </div>
+                    <div class="accordion faq-accordion" id="voterFaq">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="vHeader1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#vAns1">
+                                    Can I apply for a Voter ID card online?
+                                </button>
+                            </h3>
+                            <div id="vAns1" class="accordion-collapse collapse show" data-bs-parent="#voterFaq">
+                                <div class="accordion-body">
+                                    Yes! The Election Commission of India provides online voter registration via the NVSP / Voter Services portal. Our team assists you in uploading correct forms and documents.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="vHeader2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vAns2">
+                                    Which form should I fill to change my address on Voter ID?
+                                </button>
+                            </h3>
+                            <div id="vAns2" class="accordion-collapse collapse" data-bs-parent="#voterFaq">
+                                <div class="accordion-body">
+                                    Form 8 is used for shifting of residence (both within the assembly constituency and outside the assembly constituency).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="vHeader3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vAns3">
+                                    What is e-EPIC and how can I download it?
+                                </button>
+                            </h3>
+                            <div id="vAns3" class="accordion-collapse collapse" data-bs-parent="#voterFaq">
+                                <div class="accordion-body">
+                                    e-EPIC is a secure, digitally signed PDF version of your Voter ID card containing a QR code. Registered voters with unique mobile numbers can download it directly from the ECI portal.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="vHeader4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vAns4">
+                                    Can I hold Voter ID cards in two different cities?
+                                </button>
+                            </h3>
+                            <div id="vAns4" class="accordion-collapse collapse" data-bs-parent="#voterFaq">
+                                <div class="accordion-body">
+                                    No. Under the Representation of the People Act, registering as a voter in more than one constituency is illegal. When moving to a new address, your old registration must be transferred or deleted.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="vHeader5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vAns5">
+                                    How long does it take to receive a physical Voter ID card?
+                                </button>
+                            </h3>
+                            <div id="vAns5" class="accordion-collapse collapse" data-bs-parent="#voterFaq">
+                                <div class="accordion-body">
+                                    After online approval and BLO verification (which takes 15–30 days), the physical PVC Voter ID card is printed and dispatched via Speed Post, taking an additional 15–30 days.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="vHeader6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vAns6">
+                                    What is a BLO field verification visit?
+                                </button>
+                            </h3>
+                            <div id="vAns6" class="accordion-collapse collapse" data-bs-parent="#voterFaq">
+                                <div class="accordion-body">
+                                    A Booth Level Officer (BLO) visits your declared residential address or calls you to physically verify your identity and residence proof before final approval by the Electoral Registration Officer (ERO).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="vHeader7">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vAns7">
+                                    How can an NRI register to vote in Indian elections?
+                                </button>
+                            </h3>
+                            <div id="vAns7" class="accordion-collapse collapse" data-bs-parent="#voterFaq">
+                                <div class="accordion-body">
+                                    Overseas Indians holding valid Indian passports can apply using Form 6A. Once registered, NRIs can vote in person at their polling station in India during elections upon showing their original passport.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="vHeader8">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vAns8">
+                                    How do I get a replacement for a lost Voter ID card?
+                                </button>
+                            </h3>
+                            <div id="vAns8" class="accordion-collapse collapse" data-bs-parent="#voterFaq">
+                                <div class="accordion-body">
+                                    Submit Form 8 selecting "Issue of Replacement EPIC without correction" along with a police complaint/FIR copy or self-declaration for lost cards.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strong CTA Section -->
+    <section class="cta-section" aria-labelledby="voter-cta">
+        <div class="container">
+            <div class="cta-content text-center">
+                <span class="eyebrow eyebrow-light">Exercise Your Voting Right</span>
+                <h2 id="voter-cta">Need Help with Your Voter ID Application?</h2>
+                <p>Register as a new voter, update address, or correct spelling errors on your EPIC card with expert support.</p>
+                <div class="d-flex justify-content-center flex-wrap gap-3">
+                    <a class="btn btn-light btn-lg" href="{% url 'contact' %}">Apply Now</a>
+                    <a class="btn btn-outline-light btn-lg" href="tel:9457509243"><i class="bi bi-telephone-fill"></i> Call Expert</a>
+                    <a class="btn btn-outline-light btn-lg" href="https://wa.me/919457509243" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services Navigation -->
+    <section class="section-padding" aria-labelledby="related-services-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto mb-4">
+                <span class="eyebrow">Related Documents</span>
+                <h2 id="related-services-title">Explore Related Personal Document Services</h2>
+            </div>
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-fingerprint"></i>
+                        <h3>Aadhaar Services</h3>
+                        <p class="mb-3">Address updates &amp; phone linking for Voter ID match.</p>
+                        <a href="{% url 'aadhaar_services' %}" class="btn btn-sm btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-passport"></i>
+                        <h3>Passport Services</h3>
+                        <p class="mb-3">Voter ID serves as valid address proof for Passport.</p>
+                        <a href="{% url 'passport_services' %}" class="btn btn-sm btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-card-text"></i>
+                        <h3>PAN/TAN Services</h3>
+                        <p class="mb-3">Apply or update PAN details linked with identity proofs.</p>
+                        <a href="{% url 'pan_tan_services' %}" class="btn btn-sm btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

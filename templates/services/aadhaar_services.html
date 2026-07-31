@@ -1,0 +1,647 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Aadhaar Card Services | Enrolment, Update, Correction & PVC | Business Registration Solutions{% endblock %}
+
+{% block content %}
+<article class="service-detail">
+    <!-- Hero section -->
+    <section class="hero-section services-hero" aria-labelledby="aadhaar-hero-title">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <div class="services-hero-content">
+                        <span class="services-hero-badge"><i class="bi bi-fingerprint"></i> Official UIDAI Assistance</span>
+                        <span class="eyebrow">Complete Identity &amp; Update Services</span>
+                        <h1 id="aadhaar-hero-title">Aadhaar Card <span>Services &amp; Assistance</span></h1>
+                        <p class="hero-copy">Get expert assistance for new Aadhaar enrolment, mobile number linking, address updates, name &amp; date of birth corrections, biometric updates, PVC card ordering, and lost Aadhaar retrieval.</p>
+                        <div class="d-flex flex-wrap gap-3 hero-actions services-hero-actions">
+                            <a class="btn btn-success btn-lg" href="{% url 'contact' %}">Book Appointment / Assistance <i class="bi bi-arrow-right"></i></a>
+                            <a class="btn btn-outline-primary btn-lg" href="tel:9457509243">Talk to an Expert <i class="bi bi-telephone"></i></a>
+                        </div>
+                        <div class="trust-badges services-trust-badges">
+                            <span><i class="bi bi-check-circle-fill"></i> UIDAI Portal Assistance</span>
+                            <span><i class="bi bi-check-circle-fill"></i> Demographic &amp; Biometric Guidance</span>
+                            <span><i class="bi bi-check-circle-fill"></i> Center Slot Booking</span>
+                            <span><i class="bi bi-check-circle-fill"></i> Fast Document Verification</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="services-illustration">
+                        <span class="services-glow services-glow-blue"></span>
+                        <span class="services-glow services-glow-green"></span>
+                        <span class="services-floating-circle circle-one"></span>
+                        <span class="services-floating-circle circle-two"></span>
+                        <div class="services-image-frame">
+                            <img src="{% static 'images/services-hero.png' %}" alt="Aadhaar card assistance" class="services-hero-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview & What is Aadhaar? -->
+    <section class="section-padding" aria-labelledby="what-is-aadhaar">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="section-heading mb-0">
+                        <span class="eyebrow">National Identity</span>
+                        <h2 id="what-is-aadhaar">Overview of Aadhaar Services</h2>
+                        <p>Aadhaar is a 12-digit unique identity number issued by the Unique Identification Authority of India (UIDAI) on behalf of the Government of India. It serves as nationwide proof of identity and address for Indian residents.</p>
+                        <p>Keeping your Aadhaar details—especially your mobile number, address, and biometrics—accurate and updated is essential for accessing government welfare subsidies, opening bank accounts, obtaining SIM cards, filing income tax returns, and executing property registrations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="detail-highlight">
+                        <i class="bi bi-patch-check-fill"></i>
+                        <h3>Comprehensive Support at Every Step</h3>
+                        <p>We help you navigate official UIDAI procedures, verify document eligibility, format applications, and book enrollment center slots hassle-free.</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Document audit to ensure zero UIDAI rejection</li>
+                            <li><i class="bi bi-check2"></i> Slot booking at official Aadhaar Seva Kendras</li>
+                            <li><i class="bi bi-check2"></i> Step-by-step guidance for mobile, address &amp; DoB updates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services We Offer -->
+    <section class="section-padding light-section" aria-labelledby="services-offered-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Full Assistance Range</span>
+                <h2 id="services-offered-title">Aadhaar Services We Provide</h2>
+                <p>From new enrolments to minor spelling corrections, our team handles all your Aadhaar documentation needs.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-person-plus-fill"></i>
+                        <h3>New Aadhaar Enrolment</h3>
+                        <p>Appointment booking and document preparation for first-time Aadhaar applicants (Adults &amp; Children).</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-phone-vibrate"></i>
+                        <h3>Mobile Number &amp; Email Link</h3>
+                        <p>Guidance for linking or updating your active mobile number to receive OTPs for government services.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <h3>Address Update</h3>
+                        <p>Online address change assistance using valid address proof or Head of Family (HoF) consent mode.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-pencil-square"></i>
+                        <h3>Name &amp; Gender Correction</h3>
+                        <p>Rectify spelling errors in your name or update gender details as per supporting legal documents.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-calendar-check"></i>
+                        <h3>Date of Birth (DoB) Correction</h3>
+                        <p>Update or correct birth date details with valid birth certificate or school leaving certificate.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-fingerprint"></i>
+                        <h3>Biometric Update</h3>
+                        <p>Mandatory biometric updates (Fingerprints, Iris &amp; Facial photo) for children attaining age 5 and 15.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-credit-card-2-front-fill"></i>
+                        <h3>PVC Aadhaar Card Order</h3>
+                        <p>Assistance in ordering durable, water-resistant pocket PVC Aadhaar cards with QR code security features.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-download"></i>
+                        <h3>e-Aadhaar Download</h3>
+                        <p>Instant guidance to download password-protected electronic Aadhaar (masked or unmasked PDF).</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-search"></i>
+                        <h3>Lost EID / UID Retrieval</h3>
+                        <p>Retrieve lost Aadhaar numbers or enrolment IDs using registered mobile number verification.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Can Apply & Eligibility -->
+    <section class="section-padding" aria-labelledby="eligibility-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Applicant Categories</span>
+                <h2 id="eligibility-title">Who Can Apply for Aadhaar Services?</h2>
+                <p>UIDAI services are available for residents, minors, and non-resident Indians (NRIs).</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-person-check"></i>
+                        <h3>Indian Residents</h3>
+                        <p>Any individual residing in India for 182 days or more in the preceding 12 months.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-balloon"></i>
+                        <h3>Minors (Baal Aadhaar)</h3>
+                        <p>Children below 5 years (blue Baal Aadhaar linked with parent's Aadhaar; biometrics not captured until age 5).</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-globe"></i>
+                        <h3>Non-Resident Indians (NRIs)</h3>
+                        <p>NRIs holding a valid Indian Passport can apply for Aadhaar upon arrival without waiting 182 days.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-arrow-repeat"></i>
+                        <h3>Existing Cardholders</h3>
+                        <p>Anyone needing updates due to marriage, relocation, phone change, or biometric changes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Required Documents -->
+    <section class="section-padding light-section" aria-labelledby="documents-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Document Checklist</span>
+                <h2 id="documents-title">Documents Required for Aadhaar Updates</h2>
+                <p>UIDAI accepts specific valid documents under Proof of Identity, Address, and Date of Birth.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <section class="document-list-card">
+                        <h3><i class="bi bi-person-vcard"></i> Proof of Identity (PoI)</h3>
+                        <ul>
+                            <li>PAN Card / Voter ID Card / Driving License</li>
+                            <li>Indian Passport / Service Photo ID Card</li>
+                            <li>PDS / Ration Card with photo</li>
+                            <li>Freedom Fighter Photo Card / Disability Card</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-lg-4">
+                    <section class="document-list-card">
+                        <h3><i class="bi bi-house-door"></i> Proof of Address (PoA)</h3>
+                        <ul>
+                            <li>Electricity / Water / Gas Bill (not older than 3 months)</li>
+                            <li>Bank Account Passbook with photo &amp; address stamp</li>
+                            <li>Property Tax Receipt / Registered Rent Agreement</li>
+                            <li>Head of Family (HoF) Aadhaar &amp; Relationship Proof</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-lg-4">
+                    <section class="document-list-card">
+                        <h3><i class="bi bi-calendar-event"></i> Proof of Date of Birth (PoDB)</h3>
+                        <ul>
+                            <li>Official Birth Certificate issued by Registrar/Municipal Body</li>
+                            <li>SSLC / Class 10 School Leaving Certificate</li>
+                            <li>Indian Passport / Government Gazetted Officer Certificate</li>
+                            <li>PENSION Payment Order (PPO)</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <p class="official-note mt-4 mb-0">
+                <i class="bi bi-info-circle-fill"></i> Note: Requirements, fees and procedures may vary depending upon your State, Union Territory or issuing authority. Our experts verify the latest applicable requirements before submission.
+            </p>
+        </div>
+    </section>
+
+    <!-- Step-by-Step Registration Process -->
+    <section class="section-padding" aria-labelledby="process-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Guided Workflow</span>
+                <h2 id="process-title">Step-by-Step Aadhaar Assistance Process</h2>
+                <p>We streamline your application to ensure quick approval and minimal waiting time.</p>
+            </div>
+            <div class="process-timeline">
+                <article class="process-step">
+                    <span class="step-number">01</span>
+                    <span class="step-icon"><i class="bi bi-chat-dots"></i></span>
+                    <h3>Consultation</h3>
+                    <p>Discuss your update/enrolment requirement.</p>
+                </article>
+                <span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span>
+                <article class="process-step">
+                    <span class="step-number">02</span>
+                    <span class="step-icon"><i class="bi bi-file-earmark-check"></i></span>
+                    <h3>Doc Verification</h3>
+                    <p>We audit document formatting &amp; validity.</p>
+                </article>
+                <span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span>
+                <article class="process-step">
+                    <span class="step-number">03</span>
+                    <span class="step-icon"><i class="bi bi-calendar-plus"></i></span>
+                    <h3>Portal / Slot Booking</h3>
+                    <p>File online request or book ASK slot.</p>
+                </article>
+                <span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span>
+                <article class="process-step">
+                    <span class="step-number">04</span>
+                    <span class="step-icon"><i class="bi bi-fingerprint"></i></span>
+                    <h3>Biometric / OTP Verification</h3>
+                    <p>Complete biometric visit or OTP update.</p>
+                </article>
+                <span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span>
+                <article class="process-step">
+                    <span class="step-number">05</span>
+                    <span class="step-icon"><i class="bi bi-award"></i></span>
+                    <h3>Status &amp; Delivery</h3>
+                    <p>Track URN &amp; download updated e-Aadhaar.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estimated Processing Time & Government Charges / Service Charges -->
+    <!-- Prices will later be fetched dynamically from database -->
+    <section class="section-padding light-section" aria-labelledby="pricing-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Charges &amp; Timelines</span>
+                <h2 id="pricing-title">Aadhaar Service Packages</h2>
+                <p>Demographic updates take 5–15 days; new enrolments take 15–30 days. UIDAI statutory fee for demographic update is ₹50 and biometric update is ₹100. Select an assisted package below.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <section class="pricing-card">
+                        <h3>Online Update Assist</h3>
+                        <p class="price">₹XXX</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Address Update Filing (myAadhaar portal)</li>
+                            <li><i class="bi bi-check2"></i> Document Proof Audit</li>
+                            <li><i class="bi bi-check2"></i> Head of Family (HoF) Form Drafting</li>
+                            <li><i class="bi bi-check2"></i> e-Aadhaar Download Assistance</li>
+                        </ul>
+                        <a class="btn btn-outline-primary w-100" href="{% url 'contact' %}">Choose Online Plan</a>
+                    </section>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <section class="pricing-card pricing-card-featured">
+                        <span>Most Popular</span>
+                        <h3>Center Slot &amp; Correction</h3>
+                        <p class="price">₹XXX</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Name / DoB / Gender Correction Guidance</li>
+                            <li><i class="bi bi-check2"></i> Official Aadhaar Seva Kendra Slot Booking</li>
+                            <li><i class="bi bi-check2"></i> Complete Document Kit Preparation</li>
+                            <li><i class="bi bi-check2"></i> Biometric Update Guidance (5 / 15 years)</li>
+                            <li><i class="bi bi-check2"></i> URN Status Tracking</li>
+                        </ul>
+                        <a class="btn btn-success w-100" href="{% url 'contact' %}">Choose Standard</a>
+                    </section>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <section class="pricing-card">
+                        <h3>Complete Assistance + PVC</h3>
+                        <p class="price">₹XXX</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Everything in Standard Plan</li>
+                            <li><i class="bi bi-check2"></i> Mobile Number Linking Guidance</li>
+                            <li><i class="bi bi-check2"></i> Official PVC Plastic Card Order Setup</li>
+                            <li><i class="bi bi-check2"></i> Dedicated Executive Assistance</li>
+                            <li><i class="bi bi-check2"></i> Home Delivery Tracking of PVC Card</li>
+                        </ul>
+                        <a class="btn btn-outline-primary w-100" href="{% url 'contact' %}">Choose PVC Assist</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Problems & Solutions -->
+    <section class="section-padding" aria-labelledby="problems-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Troubleshooting</span>
+                <h2 id="problems-title">Common Aadhaar Problems &amp; Our Solutions</h2>
+                <p>We resolve frequent obstacles faced during Aadhaar update applications.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="detail-highlight h-100">
+                        <i class="bi bi-phone-slash text-danger"></i>
+                        <h3>Unlinked Mobile Number</h3>
+                        <p><strong>Problem:</strong> Cannot receive OTP for online address changes or tax filing because old phone number is inactive.</p>
+                        <p><strong>Solution:</strong> We book an expedited slot at your nearest Aadhaar Seva Kendra for mandatory biometric mobile link update.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-highlight h-100">
+                        <i class="bi bi-exclamation-triangle-fill text-warning"></i>
+                        <h3>PAN-Aadhaar Name / DoB Mismatch</h3>
+                        <p><strong>Problem:</strong> Income tax return or bank KYC rejected due to spelling variations between PAN and Aadhaar.</p>
+                        <p><strong>Solution:</strong> We audit your supporting proofs and guide you on whether to update Aadhaar or PAN first for 100% data consistency.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-highlight h-100">
+                        <i class="bi bi-x-circle-fill text-danger"></i>
+                        <h3>Address Proof Upload Rejection</h3>
+                        <p><strong>Problem:</strong> UIDAI rejects online address update due to document name mismatch or cropped utility bills.</p>
+                        <p><strong>Solution:</strong> We pre-verify document validity, image resolution, and seal/stamp clarity before portal upload.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-highlight h-100">
+                        <i class="bi bi-fingerprint text-primary"></i>
+                        <h3>Biometric Authentication Failure</h3>
+                        <p><strong>Problem:</strong> Elderly citizens or manual laborers face fingerprint authentication failure at ration shops or banks.</p>
+                        <p><strong>Solution:</strong> We guide on Iris scan update and mandatory biometric refresh at official UIDAI centers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips for Faster Approval -->
+    <section class="section-padding light-section" aria-labelledby="tips-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Expert Advice</span>
+                <h2 id="tips-title">Tips for Faster Aadhaar Approval</h2>
+                <p>Follow these essential guidelines to prevent application rejection by UIDAI examiners.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-phone"></i>
+                        <h3>Keep Phone Active</h3>
+                        <p>Ensure your registered mobile number has active SMS service to receive verification OTPs.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-file-earmark-image"></i>
+                        <h3>Clear Color Scans</h3>
+                        <p>Always upload original color scans of documents rather than black-and-white photocopies.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-spellcheck"></i>
+                        <h3>Exact Name Match</h3>
+                        <p>Ensure your name spelling on address proof matches your existing Aadhaar name exactly.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-clock-history"></i>
+                        <h3>Recent Bills Only</h3>
+                        <p>Utility bills (Electricity/Water/Gas) submitted as address proof must be less than 3 months old.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-padding" aria-labelledby="why-us-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Our Experience</span>
+                <h2 id="why-us-title">Why Choose Business Registration Solutions?</h2>
+                <p>Reliable, hassle-free guidance for all your official government documentation requirements.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-search"></i>
+                        <h3>Pre-Submission Audit</h3>
+                        <p>Exhaustive document audit to catch formatting errors before submitting to UIDAI.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-calendar-check"></i>
+                        <h3>Instant Slot Booking</h3>
+                        <p>Fast booking at official Aadhaar Seva Kendras to save you long hours in queues.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-shield-check"></i>
+                        <h3>100% Data Privacy</h3>
+                        <p>Strict confidentiality and secure handling of your personal identification data.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-lightning-charge"></i>
+                        <h3>Fast Turnaround</h3>
+                        <p>Prompt application processing and continuous URN tracking till update approval.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-headset"></i>
+                        <h3>Dedicated Support</h3>
+                        <p>Helpful advice on complex cases like HoF address update or Baal Aadhaar updates.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-receipt"></i>
+                        <h3>Transparent Fees</h3>
+                        <p>Clear, fixed pricing with zero hidden charges or surprise costs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (8-10 Questions) -->
+    <section class="section-padding light-section" aria-labelledby="faq-title">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="section-heading text-center mx-auto">
+                        <span class="eyebrow">Common Questions</span>
+                        <h2 id="faq-title">Aadhaar Services FAQs</h2>
+                    </div>
+                    <div class="accordion faq-accordion" id="aadhaarFaq">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="aHeader1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#aAns1">
+                                    Can I change my Aadhaar address online without a document proof?
+                                </button>
+                            </h3>
+                            <div id="aAns1" class="accordion-collapse collapse show" data-bs-parent="#aadhaarFaq">
+                                <div class="accordion-body">
+                                    Yes. UIDAI allows address update through Head of Family (HoF) consent, where a relative (Spouse/Parent) approves the address change using their own Aadhaar and proof of relationship.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="aHeader2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aAns2">
+                                    How can I link my new mobile number to my Aadhaar card?
+                                </button>
+                            </h3>
+                            <div id="aAns2" class="accordion-collapse collapse" data-bs-parent="#aadhaarFaq">
+                                <div class="accordion-body">
+                                    Mobile number update requires biometric authentication at an official Aadhaar Seva Kendra. No document proof is required for phone linking; we help you book an appointment slot to avoid waiting lines.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="aHeader3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aAns3">
+                                    How many times can I change my name or Date of Birth on Aadhaar?
+                                </button>
+                            </h3>
+                            <div id="aAns3" class="accordion-collapse collapse" data-bs-parent="#aadhaarFaq">
+                                <div class="accordion-body">
+                                    As per UIDAI guidelines, Name change is allowed up to 2 times in a lifetime, and Date of Birth change is allowed only 1 time (subject to valid birth certificate proof).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="aHeader4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aAns4">
+                                    What is a Baal Aadhaar card?
+                                </button>
+                            </h3>
+                            <div id="aAns4" class="accordion-collapse collapse" data-bs-parent="#aadhaarFaq">
+                                <div class="accordion-body">
+                                    Baal Aadhaar is a blue-colored Aadhaar card issued for children under 5 years of age. Biometrics are not captured for children under 5; mandatory biometric update must be done when the child reaches age 5 and age 15.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="aHeader5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aAns5">
+                                    How long does an Aadhaar update take to get approved?
+                                </button>
+                            </h3>
+                            <div id="aAns5" class="accordion-collapse collapse" data-bs-parent="#aadhaarFaq">
+                                <div class="accordion-body">
+                                    Online demographic updates (like address) typically take 5 to 15 working days. Center updates take 7 to 30 days depending on UIDAI backend verification.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="aHeader6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aAns6">
+                                    What is the difference between Masked Aadhaar and Regular e-Aadhaar?
+                                </button>
+                            </h3>
+                            <div id="aAns6" class="accordion-collapse collapse" data-bs-parent="#aadhaarFaq">
+                                <div class="accordion-body">
+                                    Masked Aadhaar hides the first 8 digits of your Aadhaar number (showing xxxx-xxxx-1234) for privacy during hotel check-ins or KYC, while Regular e-Aadhaar displays the full 12 digits.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="aHeader7">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aAns7">
+                                    How do I retrieve a lost Aadhaar number if I don't have my card copy?
+                                </button>
+                            </h3>
+                            <div id="aAns7" class="accordion-collapse collapse" data-bs-parent="#aadhaarFaq">
+                                <div class="accordion-body">
+                                    If your mobile number is linked, your Aadhaar number or Enrolment ID (EID) can be retrieved online via OTP verification. Our team assists you in retrieving lost Aadhaar details securely.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="aHeader8">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aAns8">
+                                    Is e-Aadhaar downloaded online legally valid everywhere?
+                                </button>
+                            </h3>
+                            <div id="aAns8" class="accordion-collapse collapse" data-bs-parent="#aadhaarFaq">
+                                <div class="accordion-body">
+                                    Yes! As per the Aadhaar Act, downloaded e-Aadhaar and official PVC Aadhaar cards are equally valid as physical Aadhaar letters for all official and government purposes.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strong CTA Section -->
+    <section class="cta-section" aria-labelledby="aadhaar-cta">
+        <div class="container">
+            <div class="cta-content text-center">
+                <span class="eyebrow eyebrow-light">Hassle-Free Aadhaar Assistance</span>
+                <h2 id="aadhaar-cta">Need Help Updating Your Aadhaar Details?</h2>
+                <p>Avoid long queues and document rejections. Let our experts assist you with address updates, phone linking, and Aadhaar Seva Kendra slot bookings.</p>
+                <div class="d-flex justify-content-center flex-wrap gap-3">
+                    <a class="btn btn-light btn-lg" href="{% url 'contact' %}">Get Assistance Now</a>
+                    <a class="btn btn-outline-light btn-lg" href="tel:9457509243"><i class="bi bi-telephone-fill"></i> Call Expert</a>
+                    <a class="btn btn-outline-light btn-lg" href="https://wa.me/919457509243" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services Navigation -->
+    <section class="section-padding" aria-labelledby="related-services-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto mb-4">
+                <span class="eyebrow">Related Documents</span>
+                <h2 id="related-services-title">Explore Related Personal Document Services</h2>
+            </div>
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-person-vcard"></i>
+                        <h3>Voter ID Services</h3>
+                        <p class="mb-3">New Voter Card, correction &amp; address shift.</p>
+                        <a href="{% url 'voter_id_services' %}" class="btn btn-sm btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-passport"></i>
+                        <h3>Passport Services</h3>
+                        <p class="mb-3">Fresh passport, renewal &amp; Tatkal guidance.</p>
+                        <a href="{% url 'passport_services' %}" class="btn btn-sm btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-card-text"></i>
+                        <h3>PAN/TAN Services</h3>
+                        <p class="mb-3">Apply or update PAN details linked with Aadhaar.</p>
+                        <a href="{% url 'pan_tan_services' %}" class="btn btn-sm btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

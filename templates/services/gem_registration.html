@@ -1,0 +1,566 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}GeM Seller Registration | Government e-Marketplace | Business Registration Solutions{% endblock %}
+
+{% block content %}
+<article class="service-detail">
+    <!-- Hero section -->
+    <section class="hero-section services-hero" aria-labelledby="gem-hero-title">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <div class="services-hero-content">
+                        <span class="services-hero-badge"><i class="bi bi-bag-check-fill"></i> Government e-Marketplace Portal</span>
+                        <span class="eyebrow">Sell Directly to Government Departments</span>
+                        <h1 id="gem-hero-title">GeM Seller <span>Registration Services</span></h1>
+                        <p class="hero-copy">Register as an official vendor on the Government e-Marketplace (GeM) portal. Access multi-billion rupee procurement orders from Central &amp; State Ministries, Defense, and PSUs across India.</p>
+                        <div class="d-flex flex-wrap gap-3 hero-actions services-hero-actions">
+                            <a class="btn btn-success btn-lg" href="{% url 'contact' %}">Register Now <i class="bi bi-arrow-right"></i></a>
+                            <a class="btn btn-outline-primary btn-lg" href="tel:9457509243">Talk to an Expert <i class="bi bi-telephone"></i></a>
+                        </div>
+                        <div class="trust-badges services-trust-badges">
+                            <span><i class="bi bi-check-circle-fill"></i> Official GeM Setup</span>
+                            <span><i class="bi bi-check-circle-fill"></i> OEM &amp; Reseller Profiles</span>
+                            <span><i class="bi bi-check-circle-fill"></i> Product Catalog Upload</span>
+                            <span><i class="bi bi-check-circle-fill"></i> 100% Online Assistance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="services-illustration">
+                        <span class="services-glow services-glow-blue"></span>
+                        <span class="services-glow services-glow-green"></span>
+                        <span class="services-floating-circle circle-one"></span>
+                        <span class="services-floating-circle circle-two"></span>
+                        <div class="services-image-frame">
+                            <img src="{% static 'images/services-hero.png' %}" alt="GeM seller registration support" class="services-hero-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is GeM Registration? -->
+    <section class="section-padding" aria-labelledby="what-is-gem">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="section-heading mb-0">
+                        <span class="eyebrow">Government Procurement</span>
+                        <h2 id="what-is-gem">What Is GeM Seller Registration?</h2>
+                        <p>The Government e-Marketplace (GeM) is the official online procurement portal launched by the Ministry of Commerce and Industry, Government of India. It facilitates online procurement of common use goods and services required by various Central and State Government departments, Ministries, PSUs, and autonomous bodies.</p>
+                        <p>Registering as a seller on GeM gives your business direct access to government tenders, direct purchase orders, and L1 bidding opportunities. Whether you are an Original Equipment Manufacturer (OEM), an authorized reseller, or a service provider, GeM opens doors to a massive public sector market.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="detail-highlight">
+                        <i class="bi bi-patch-check-fill"></i>
+                        <h3>Direct Access to Government Bids</h3>
+                        <p>Our team assists you with profile creation, brand listing, OEM authorization, and product catalog management on the GeM portal.</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Verified Seller Profile &amp; Caution Money deposit support</li>
+                            <li><i class="bi bi-check2"></i> Vendor Assessment &amp; OEM brand approval</li>
+                            <li><i class="bi bi-check2"></i> Direct Purchase orders &amp; L1 Bidding access</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Needs It & Seller Categories -->
+    <section class="section-padding light-section" aria-labelledby="who-needs-gem">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Vendor Categories</span>
+                <h2 id="who-needs-gem">Who Needs GeM Seller Registration?</h2>
+                <p>Businesses of all sizes can register on GeM to supply products or services to public sector entities.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-factory"></i>
+                        <h3>Original Equipment Manufacturers (OEMs)</h3>
+                        <p>Manufacturers who produce original products and want to list their brand exclusively on GeM.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-shop"></i>
+                        <h3>Resellers &amp; Distributors</h3>
+                        <p>Authorized sellers and traders who distribute brand-authorized products to government buyers.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-tools"></i>
+                        <h3>Service Providers</h3>
+                        <p>Firms providing manpower, IT services, maintenance, cleaning, security, or professional consulting.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-building-check"></i>
+                        <h3>MSMEs &amp; Startups</h3>
+                        <p>Small enterprises eligible for purchase preferences, turnover relaxations, and EMD exemptions on GeM.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits of GeM Registration -->
+    <section class="section-padding" aria-labelledby="benefits-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Business Advantages</span>
+                <h2 id="benefits-title">Benefits of GeM Seller Registration</h2>
+                <p>Unlock huge public sector selling potential with transparent procedures and guaranteed payments.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-cash-stack"></i>
+                        <h3>Multi-Billion Market</h3>
+                        <p>Access thousands of daily purchase requisitions from government departments nationwide.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-lightning-charge"></i>
+                        <h3>Direct Purchase Orders</h3>
+                        <p>Low-value orders (up to ₹25,000) can be placed directly with any registered seller on GeM.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-shield-check"></i>
+                        <h3>Guaranteed Timely Payment</h3>
+                        <p>Government rules mandate prompt online payment release within stipulated timelines after delivery.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-percent"></i>
+                        <h3>MSME &amp; Startup Perks</h3>
+                        <p>Exemption from Earnest Money Deposit (EMD) and relaxed prior turnover/experience criteria.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-sliders"></i>
+                        <h3>Dynamic Bidding &amp; RA</h3>
+                        <p>Participate in Reverse Auction (RA) and competitive bidding for high-value tenders transparently.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-globe2"></i>
+                        <h3>Nationwide Reach</h3>
+                        <p>Sell to central ministries, state bodies, defense establishments, and railway units across India.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-award"></i>
+                        <h3>Brand Visibility</h3>
+                        <p>Establish brand credibility with an official government-verified seller profile and ratings.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-journal-check"></i>
+                        <h3>Paperless &amp; Transparent</h3>
+                        <p>100% online registration, document verification, catalog upload, and order management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Required Documents -->
+    <section class="section-padding light-section" aria-labelledby="documents-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Document Checklist</span>
+                <h2 id="documents-title">Documents Required for GeM Registration</h2>
+                <p>Keep these details ready for primary profile creation and vendor assessment on the GeM portal.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <section class="document-list-card">
+                        <h3><i class="bi bi-person-badge"></i> Business Identity</h3>
+                        <ul>
+                            <li>PAN Card of Business / Proprietor</li>
+                            <li>Aadhaar Card of Authorized Signatory (linked with mobile)</li>
+                            <li>GSTIN Certificate (Active GST Status)</li>
+                            <li>Incorporation Certificate / Partnership Deed (if applicable)</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-lg-4">
+                    <section class="document-list-card">
+                        <h3><i class="bi bi-bank"></i> Financial &amp; Tax Proofs</h3>
+                        <ul>
+                            <li>Active Bank Account Details &amp; Cancelled Cheque</li>
+                            <li>Income Tax Return (ITR) filings for last 1 to 3 financial years</li>
+                            <li>Turnover details verified by CA (where required)</li>
+                            <li>Registered Business Address Proof</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-lg-4">
+                    <section class="document-list-card">
+                        <h3><i class="bi bi-box-seam"></i> Product &amp; Brand Details</h3>
+                        <ul>
+                            <li>Trademark Certificate / Brand Authorization Letter (for OEMs)</li>
+                            <li>Product Images, Specifications, and Model Numbers</li>
+                            <li>MSME / Udyam Certificate (for EMD &amp; Fee waivers)</li>
+                            <li>BIS / FSSAI / ISO Quality Certificates (if category requires)</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <p class="official-note mt-4 mb-0">
+                <i class="bi bi-info-circle-fill"></i> Note: Primary registration on the GeM portal is free of government charge. GeM requires sellers to deposit Caution Money based on annual turnover thresholds. Final document requirements will be confirmed during consultation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Step-by-Step Registration Process -->
+    <section class="section-padding" aria-labelledby="process-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Seamless Setup</span>
+                <h2 id="process-title">GeM Registration Process</h2>
+                <p>We manage your complete vendor onboard journey from account creation to catalog upload.</p>
+            </div>
+            <div class="process-timeline">
+                <article class="process-step">
+                    <span class="step-number">01</span>
+                    <span class="step-icon"><i class="bi bi-person-plus"></i></span>
+                    <h3>Primary Account</h3>
+                    <p>Register profile using Aadhaar &amp; PAN verification.</p>
+                </article>
+                <span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span>
+                <article class="process-step">
+                    <span class="step-number">02</span>
+                    <span class="step-icon"><i class="bi bi-shield-check"></i></span>
+                    <h3>ITR &amp; Bank Sync</h3>
+                    <p>Link Income Tax &amp; Bank account credentials.</p>
+                </article>
+                <span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span>
+                <article class="process-step">
+                    <span class="step-number">03</span>
+                    <span class="step-icon"><i class="bi bi-award"></i></span>
+                    <h3>Vendor Assessment</h3>
+                    <p>Complete OEM brand approval (where applicable).</p>
+                </article>
+                <span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span>
+                <article class="process-step">
+                    <span class="step-number">04</span>
+                    <span class="step-icon"><i class="bi bi-box-arrow-in-up"></i></span>
+                    <h3>Catalog Upload</h3>
+                    <p>Upload products/services with pricing &amp; specs.</p>
+                </article>
+                <span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span>
+                <article class="process-step">
+                    <span class="step-number">05</span>
+                    <span class="step-icon"><i class="bi bi-cart-check"></i></span>
+                    <h3>Ready for Orders</h3>
+                    <p>Start receiving direct orders &amp; bidding on tenders.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processing Time & Government Fees / Professional Charges -->
+    <!-- Prices will later be fetched dynamically from database -->
+    <section class="section-padding light-section" aria-labelledby="pricing-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Packages &amp; Processing</span>
+                <h2 id="pricing-title">GeM Seller Registration Packages</h2>
+                <p>Primary portal setup takes 2–4 working days once documents are verified. Select a package for assisted setup.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <section class="pricing-card">
+                        <h3>Basic Seller</h3>
+                        <p class="price">₹XXX</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Primary GeM Profile Creation</li>
+                            <li><i class="bi bi-check2"></i> Aadhaar &amp; PAN Verification</li>
+                            <li><i class="bi bi-check2"></i> Bank Account &amp; ITR Validation</li>
+                            <li><i class="bi bi-check2"></i> Up to 5 Product Listings</li>
+                        </ul>
+                        <a class="btn btn-outline-primary w-100" href="{% url 'contact' %}">Choose Basic</a>
+                    </section>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <section class="pricing-card pricing-card-featured">
+                        <span>Most Popular</span>
+                        <h3>OEM / Standard</h3>
+                        <p class="price">₹XXX</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Primary Profile &amp; Caution Money Setup</li>
+                            <li><i class="bi bi-check2"></i> OEM Vendor Assessment Support</li>
+                            <li><i class="bi bi-check2"></i> Brand Approval &amp; Listing</li>
+                            <li><i class="bi bi-check2"></i> Up to 25 Product / Service Listings</li>
+                            <li><i class="bi bi-check2"></i> Dedicated Tender Alert Assistance</li>
+                        </ul>
+                        <a class="btn btn-success w-100" href="{% url 'contact' %}">Choose Standard</a>
+                    </section>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <section class="pricing-card">
+                        <h3>Enterprise Bidding</h3>
+                        <p class="price">₹XXX</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> End-to-End GeM Portal Management</li>
+                            <li><i class="bi bi-check2"></i> OEM Brand &amp; Reseller Authorization</li>
+                            <li><i class="bi bi-check2"></i> Unlimited Catalog Upload</li>
+                            <li><i class="bi bi-check2"></i> L1 Bidding &amp; RA Participation Guidance</li>
+                            <li><i class="bi bi-check2"></i> Priority Executive Support</li>
+                        </ul>
+                        <a class="btn btn-outline-primary w-100" href="{% url 'contact' %}">Choose Enterprise</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-padding" aria-labelledby="why-us-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Our Edge</span>
+                <h2 id="why-us-title">Why Choose Business Registration Solutions?</h2>
+                <p>Professional support to help you maximize sales in the government procurement ecosystem.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-person-workspace"></i>
+                        <h3>GeM Portal Experts</h3>
+                        <p>Specialists experienced in cataloging rules, HSN mapping, and vendor assessment compliance.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-award"></i>
+                        <h3>OEM Brand Approval</h3>
+                        <p>Guidance in securing OEM brand status to prevent unauthorized resellers from listing your products.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-shield-check"></i>
+                        <h3>Zero Errors</h3>
+                        <p>Meticulous verification of PAN, GST, and ITR data to avoid account suspension or rejection.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-laptop"></i>
+                        <h3>100% Online Assistance</h3>
+                        <p>Complete remote handling without requiring physical visits to government offices.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-headset"></i>
+                        <h3>Post-Registration Support</h3>
+                        <p>Continuous help for bidding, catalog updates, and handling buyer query notifications.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-receipt"></i>
+                        <h3>Transparent Fees</h3>
+                        <p>Clear professional fees with no hidden costs or surprise charges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (8-10 Questions) -->
+    <section class="section-padding light-section" aria-labelledby="faq-title">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="section-heading text-center mx-auto">
+                        <span class="eyebrow">Common Questions</span>
+                        <h2 id="faq-title">GeM Seller Registration FAQs</h2>
+                    </div>
+                    <div class="accordion faq-accordion" id="gemFaq">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="gHeader1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#gAns1">
+                                    Is GeM portal registration compulsory for selling to the government?
+                                </button>
+                            </h3>
+                            <div id="gAns1" class="accordion-collapse collapse show" data-bs-parent="#gemFaq">
+                                <div class="accordion-body">
+                                    Yes. As per General Financial Rules (GFR), it is mandatory for all Central Ministries, State Government departments, and PSUs to procure goods and services available on the GeM portal.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="gHeader2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gAns2">
+                                    What is Caution Money on GeM?
+                                </button>
+                            </h3>
+                            <div id="gAns2" class="accordion-collapse collapse" data-bs-parent="#gemFaq">
+                                <div class="accordion-body">
+                                    Caution Money is a refundable security deposit mandated by GeM to ensure seller discipline. The amount varies based on annual turnover (e.g., ₹5,000 for turnover under ₹1 Cr; ₹10,000 for ₹1–10 Cr; ₹25,000 for above ₹10 Cr).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="gHeader3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gAns3">
+                                    What is the difference between an OEM and a Reseller on GeM?
+                                </button>
+                            </h3>
+                            <div id="gAns3" class="accordion-collapse collapse" data-bs-parent="#gemFaq">
+                                <div class="accordion-body">
+                                    An OEM (Original Equipment Manufacturer) manufactures products under their own registered brand. A Reseller sells products manufactured by an OEM after obtaining brand authorization.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="gHeader4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gAns4">
+                                    Is GST mandatory for GeM Seller Registration?
+                                </button>
+                            </h3>
+                            <div id="gAns4" class="accordion-collapse collapse" data-bs-parent="#gemFaq">
+                                <div class="accordion-body">
+                                    Yes, a valid GSTIN is required for most product sellers on GeM. However, certain exempt categories or small service providers operating below GST limits may register using PAN and bank details.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="gHeader5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gAns5">
+                                    Do MSMEs get special benefits on GeM?
+                                </button>
+                            </h3>
+                            <div id="gAns5" class="accordion-collapse collapse" data-bs-parent="#gemFaq">
+                                <div class="accordion-body">
+                                    Yes! MSMEs with valid Udyam Registration get Earnest Money Deposit (EMD) exemptions, purchase preferences under Public Procurement Policy, and relaxed prior turnover requirements.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="gHeader6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gAns6">
+                                    How long does it take to complete GeM registration?
+                                </button>
+                            </h3>
+                            <div id="gAns6" class="accordion-collapse collapse" data-bs-parent="#gemFaq">
+                                <div class="accordion-body">
+                                    Primary seller account creation takes 1 to 3 working days. Catalog approval and OEM brand assessment may take an additional 3 to 7 working days depending on product category verification.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="gHeader7">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gAns7">
+                                    How are payments processed for GeM orders?
+                                </button>
+                            </h3>
+                            <div id="gAns7" class="accordion-collapse collapse" data-bs-parent="#gemFaq">
+                                <div class="accordion-body">
+                                    Payments are made directly into the seller's registered bank account by government buying departments. GeM guidelines stipulate payment release within 10 days of Consignee Receipt and Acceptance Certificate (CRAC) generation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="gHeader8">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gAns8">
+                                    Can service providers register on GeM?
+                                </button>
+                            </h3>
+                            <div id="gAns8" class="accordion-collapse collapse" data-bs-parent="#gemFaq">
+                                <div class="accordion-body">
+                                    Yes! GeM features dedicated service categories such as Manpower Outsourcing, Vehicle Hiring, IT Support, Sanitation, Security, and Professional Consulting services.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="gHeader9">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gAns9">
+                                    What happens if a seller fails to fulfill a GeM order?
+                                </button>
+                            </h3>
+                            <div id="gAns9" class="accordion-collapse collapse" data-bs-parent="#gemFaq">
+                                <div class="accordion-body">
+                                    Failure to deliver or delayed fulfillment may lead to incident reporting, caution money forfeiture, rating downgrades, or temporary account suspension on GeM.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strong CTA Section -->
+    <section class="cta-section" aria-labelledby="gem-cta">
+        <div class="container">
+            <div class="cta-content text-center">
+                <span class="eyebrow eyebrow-light">Start Selling to Government</span>
+                <h2 id="gem-cta">Ready to Expand Your Business with GeM Tenders?</h2>
+                <p>Register as a verified GeM seller today. Let our experts handle account setup, brand approval, and product cataloging.</p>
+                <div class="d-flex justify-content-center flex-wrap gap-3">
+                    <a class="btn btn-light btn-lg" href="{% url 'contact' %}">Register Now</a>
+                    <a class="btn btn-outline-light btn-lg" href="tel:9457509243"><i class="bi bi-telephone-fill"></i> Call Now</a>
+                    <a class="btn btn-outline-light btn-lg" href="https://wa.me/919457509243" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services Navigation -->
+    <section class="section-padding" aria-labelledby="related-services-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto mb-4">
+                <span class="eyebrow">Related Compliance</span>
+                <h2 id="related-services-title">Explore Related Business Registrations</h2>
+            </div>
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-building-check"></i>
+                        <h3>MSME (Udyam)</h3>
+                        <p class="mb-3">Get EMD &amp; turnover exemptions on GeM.</p>
+                        <a href="{% url 'msme_registration' %}" class="btn btn-sm btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-receipt-cutoff"></i>
+                        <h3>GST Registration</h3>
+                        <p class="mb-3">Mandatory GSTIN setup for GeM product sellers.</p>
+                        <a href="{% url 'gst_registration' %}" class="btn btn-sm btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-rocket-takeoff"></i>
+                        <h3>Startup India</h3>
+                        <p class="mb-3">Special public procurement benefits for startups.</p>
+                        <a href="{% url 'startup_india_registration' %}" class="btn btn-sm btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}

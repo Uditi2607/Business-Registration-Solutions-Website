@@ -1,0 +1,638 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Startup India Registration & DPIIT Recognition | Business Registration Solutions{% endblock %}
+
+{% block content %}
+<article class="service-detail">
+    <!-- Hero section -->
+    <section class="hero-section services-hero" aria-labelledby="startup-hero-title">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <div class="services-hero-content">
+                        <span class="services-hero-badge"><i class="bi bi-rocket-takeoff-fill"></i> Startup India Recognition</span>
+                        <span class="eyebrow">Empowering Indian Innovators</span>
+                        <h1 id="startup-hero-title">Startup India <span>Registration Services</span></h1>
+                        <p class="hero-copy">Get official DPIIT Recognition for your startup. Unlock tax exemptions, self-certification benefits, government tender preferences, and fast-track IP registration.</p>
+                        <div class="d-flex flex-wrap gap-3 hero-actions services-hero-actions">
+                            <a class="btn btn-success btn-lg" href="{% url 'contact' %}">Apply Now <i class="bi bi-arrow-right"></i></a>
+                            <a class="btn btn-outline-primary btn-lg" href="tel:9457509243">Talk to an Expert <i class="bi bi-telephone"></i></a>
+                        </div>
+                        <div class="trust-badges services-trust-badges">
+                            <span><i class="bi bi-check-circle-fill"></i> DPIIT Recognized</span>
+                            <span><i class="bi bi-check-circle-fill"></i> 100% Online</span>
+                            <span><i class="bi bi-check-circle-fill"></i> Fast-Track Processing</span>
+                            <span><i class="bi bi-check-circle-fill"></i> Expert Assistance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="services-illustration">
+                        <span class="services-glow services-glow-blue"></span>
+                        <span class="services-glow services-glow-green"></span>
+                        <span class="services-floating-circle circle-one"></span>
+                        <span class="services-floating-circle circle-two"></span>
+                        <div class="services-image-frame">
+                            <img src="{% static 'images/services-hero.png' %}" alt="Startup India DPIIT registration support" class="services-hero-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Startup India? -->
+    <section class="section-padding" aria-labelledby="what-is-startup">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="section-heading mb-0">
+                        <span class="eyebrow">Government Initiative</span>
+                        <h2 id="what-is-startup">What Is Startup India Registration?</h2>
+                        <p>Startup India is a flagship initiative of the Government of India designed to build a strong ecosystem for nurturing innovation, empowering entrepreneurs, and driving sustainable economic growth.</p>
+                        <p>Under this scheme, eligible entities (Private Limited Companies, Registered Partnerships, and LLPs) can apply for official DPIIT Recognition. Once recognized, startups gain access to tax holidays, easy compliance self-certification, fund-of-funds access, and intellectual property incentives.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="detail-highlight">
+                        <i class="bi bi-patch-check-fill"></i>
+                        <h3>Official Government Recognition</h3>
+                        <p>We help you prepare your innovation pitch, organize incorporation documents, and file your DPIIT recognition application smoothly.</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> DPIIT Recognition Certificate</li>
+                            <li><i class="bi bi-check2"></i> 3-Year Income Tax Holiday eligibility</li>
+                            <li><i class="bi bi-check2"></i> Up to 80% rebate on IP & Patent applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DPIIT Recognition Explained -->
+    <section class="section-padding light-section" aria-labelledby="dpiit-explained">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Core Recognition</span>
+                <h2 id="dpiit-explained">Understanding DPIIT Recognition</h2>
+                <p>The Department for Promotion of Industry and Internal Trade (DPIIT) certificate is the official credential that qualifies an entity as a recognized startup in India.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <i class="bi bi-award-fill"></i>
+                        <h3>Official Gateway</h3>
+                        <p>Serves as proof of official status for government schemes, private incubators, and investors across India.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <i class="bi bi-shield-lock-fill"></i>
+                        <h3>Regulatory Relief</h3>
+                        <p>Allows self-certification under 9 environmental and labor laws, significantly lowering compliance burdens.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <i class="bi bi-bank2"></i>
+                        <h3>Capital & Funding Access</h3>
+                        <p>Unlocks eligibility for Government Seed Fund schemes, SIDBI Fund of Funds, and Angel Tax exemptions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility Criteria -->
+    <section class="section-padding" aria-labelledby="eligibility-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Who Qualifies</span>
+                <h2 id="eligibility-title">Eligibility Criteria for Startup India</h2>
+                <p>To qualify for DPIIT recognition, your enterprise must fulfill the following mandatory government criteria.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-building"></i>
+                        <h3>Eligible Entity Type</h3>
+                        <p>Incorporated as a Private Limited Company, Registered Partnership Firm, or Limited Liability Partnership (LLP).</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-hourglass-split"></i>
+                        <h3>Entity Age (Up to 10 Years)</h3>
+                        <p>The entity must be within 10 years from its official date of incorporation or registration.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-currency-rupee"></i>
+                        <h3>Turnover Cap (Under ₹100 Cr)</h3>
+                        <p>Annual turnover must not have exceeded ₹100 Crore in any financial year since incorporation.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-lightbulb"></i>
+                        <h3>Innovation &amp; Improvement</h3>
+                        <p>Working towards innovation, development, or improvement of products, processes, or scalable services.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-arrow-repeat"></i>
+                        <h3>Original Business</h3>
+                        <p>Must be a new venture, not formed by splitting up or reconstructing an existing business entity.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-graph-up"></i>
+                        <h3>High Wealth &amp; Job Creation</h3>
+                        <p>Has potential for scalable business models with high potential of employment generation or wealth creation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits of Startup India Recognition -->
+    <section class="section-padding light-section" aria-labelledby="benefits-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Key Advantages</span>
+                <h2 id="benefits-title">Benefits of Startup India Recognition</h2>
+                <p>Accelerate your growth with exclusive tax exemptions, financial support, and regulatory simplifications.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-percent"></i>
+                        <h3>3-Year Tax Holiday</h3>
+                        <p>Eligible for 100% income tax exemption for 3 consecutive years under Section 80-IAC.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-shield-check"></i>
+                        <h3>Angel Tax Exemption</h3>
+                        <p>Exemption from tax on investments above fair market value under Section 56(2)(viib).</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-journal-check"></i>
+                        <h3>IP Registration Rebates</h3>
+                        <p>Receive up to 80% rebate on patent filings and 50% rebate on trademark registrations.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-lightning-charge"></i>
+                        <h3>Fast-Track Patent Examination</h3>
+                        <p>Expedited patent examination so your inventions gain fast legal protection.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-file-earmark-lock"></i>
+                        <h3>Self-Certification Compliance</h3>
+                        <p>Self-certify compliance under 6 Labor Laws and 3 Environmental Laws for 3 to 5 years.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-file-earmark-text"></i>
+                        <h3>Government Tenders Preference</h3>
+                        <p>Exemption from EMD (Earnest Money Deposit) and prior experience/turnover requirements in public procurement.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-cash-stack"></i>
+                        <h3>Access to Government Funds</h3>
+                        <p>Access SIDBI Fund of Funds and Startup India Seed Fund Scheme (SISFS) grants.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="feature-card">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <h3>Easy Winding Up</h3>
+                        <p>Fast-track exit mechanism allowing startup closure within 90 days under Insolvency Code.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison: Without DPIIT vs With DPIIT -->
+    <section class="section-padding" aria-labelledby="comparison-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Clear Advantage</span>
+                <h2 id="comparison-title">Without DPIIT vs With DPIIT Recognition</h2>
+                <p>Compare the operational advantages of obtaining official Startup India recognition.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="detail-highlight h-100 border-danger-subtle">
+                        <i class="bi bi-x-circle-fill text-danger"></i>
+                        <h3 class="text-danger">Without DPIIT Recognition</h3>
+                        <p>Standard corporate status without specialized government incentives.</p>
+                        <ul>
+                            <li><i class="bi bi-x text-danger"></i> Standard corporate income tax rates applicable from day one</li>
+                            <li><i class="bi bi-x text-danger"></i> Full statutory fees for patents and trademark filings</li>
+                            <li><i class="bi bi-x text-danger"></i> Strict EMD and turnover rules when bidding for public tenders</li>
+                            <li><i class="bi bi-x text-danger"></i> Regular labor and environmental inspection schedules</li>
+                            <li><i class="bi bi-x text-danger"></i> Standard lengthy company winding-up process</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="detail-highlight h-100 border-success-subtle">
+                        <i class="bi bi-check-circle-fill text-success"></i>
+                        <h3 class="text-success">With DPIIT Recognition</h3>
+                        <p>Accelerated growth environment backed by Government of India benefits.</p>
+                        <ul>
+                            <li><i class="bi bi-check2 text-success"></i> Eligible for 3-year income tax holiday under 80-IAC</li>
+                            <li><i class="bi bi-check2 text-success"></i> 80% Patent fee rebate &amp; 50% Trademark fee rebate</li>
+                            <li><i class="bi bi-check2 text-success"></i> EMD exemptions and relaxed tender criteria</li>
+                            <li><i class="bi bi-check2 text-success"></i> Self-certification under 9 labor and environmental laws</li>
+                            <li><i class="bi bi-check2 text-success"></i> Fast-track 90-day winding-up option under IBC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Should Apply? -->
+    <section class="section-padding light-section" aria-labelledby="who-apply-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Target Industries</span>
+                <h2 id="who-apply-title">Who Should Apply for Startup India?</h2>
+                <p>Innovative entities across diverse sectors can leverage DPIIT recognition for competitive scale.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-laptop"></i>
+                        <h3>Tech &amp; SaaS Startups</h3>
+                        <p>Software, AI, Cloud, and platform developers creating innovative digital solutions.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-credit-card-2-front"></i>
+                        <h3>FinTech &amp; EdTech</h3>
+                        <p>Financial technology platforms and educational innovators transforming learning.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-cart-check"></i>
+                        <h3>D2C &amp; E-Commerce Brands</h3>
+                        <p>Consumer product brands with proprietary formulas, designs, or supply chains.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-activity"></i>
+                        <h3>HealthTech &amp; BioTech</h3>
+                        <p>Medical device makers, diagnostic solutions, and bio-science research teams.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-sun"></i>
+                        <h3>CleanTech &amp; Green Energy</h3>
+                        <p>Ventures focusing on electric mobility, renewable energy, and sustainability.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-cpu"></i>
+                        <h3>Hardware &amp; IoT Innovators</h3>
+                        <p>Electronics, robotics, and connected hardware product manufacturers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Required Documents -->
+    <section class="section-padding" aria-labelledby="documents-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Document Checklist</span>
+                <h2 id="documents-title">Documents Required for Startup India Registration</h2>
+                <p>Keep these documents ready for a seamless DPIIT recognition filing process.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <section class="document-list-card">
+                        <h3><i class="bi bi-file-earmark-text"></i> Entity Legal Proof</h3>
+                        <ul>
+                            <li>Certificate of Incorporation (Pvt Ltd / LLP) or Partnership Registration</li>
+                            <li>Memorandum of Association (MOA) &amp; Articles of Association (AOA) / Deed</li>
+                            <li>Permanent Account Number (PAN) Card of the Entity</li>
+                            <li>GSTIN (if registered under GST)</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-lg-4">
+                    <section class="document-list-card">
+                        <h3><i class="bi bi-people"></i> Promoter &amp; Director Details</h3>
+                        <ul>
+                            <li>PAN &amp; Aadhaar Card of Directors / Partners</li>
+                            <li>Passport-size Photographs</li>
+                            <li>Official Email Address &amp; Contact Number</li>
+                            <li>Director Identification Number (DIN / DPIN)</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-lg-4">
+                    <section class="document-list-card">
+                        <h3><i class="bi bi-journal-code"></i> Innovation Write-Up &amp; Demo</h3>
+                        <ul>
+                            <li>Pitch Deck or Brief Write-Up explaining product innovation</li>
+                            <li>Details of how your product/service solves a market problem</li>
+                            <li>Website Link, Mobile App Link, or Video Demo</li>
+                            <li>Patents, Trademarks, or Industry Awards (if applicable)</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <p class="official-note mt-4 mb-0">
+                <i class="bi bi-info-circle-fill"></i> Government DPIIT Recognition portal filing itself has no official government application fee. Our charges cover expert documentation review, pitch presentation structure, and end-to-end filing management.
+            </p>
+        </div>
+    </section>
+
+    <!-- Registration Process -->
+    <section class="section-padding light-section" aria-labelledby="process-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Simple Workflow</span>
+                <h2 id="process-title">Startup India Registration Process</h2>
+                <p>We handle your application step-by-step to ensure high approval accuracy.</p>
+            </div>
+            <div class="process-timeline">
+                <article class="process-step">
+                    <span class="step-number">01</span>
+                    <span class="step-icon"><i class="bi bi-chat-dots"></i></span>
+                    <h3>Consultation</h3>
+                    <p>Discuss your startup model &amp; eligibility.</p>
+                </article>
+                <span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span>
+                <article class="process-step">
+                    <span class="step-number">02</span>
+                    <span class="step-icon"><i class="bi bi-file-earmark-arrow-up"></i></span>
+                    <h3>Doc Collection</h3>
+                    <p>Share incorporation &amp; pitch details.</p>
+                </article>
+                <span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span>
+                <article class="process-step">
+                    <span class="step-number">03</span>
+                    <span class="step-icon"><i class="bi bi-pencil-square"></i></span>
+                    <h3>Pitch Review</h3>
+                    <p>We polish your innovation write-up.</p>
+                </article>
+                <span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span>
+                <article class="process-step">
+                    <span class="step-number">04</span>
+                    <span class="step-icon"><i class="bi bi-send-check"></i></span>
+                    <h3>DPIIT Filing</h3>
+                    <p>Submit application on official portal.</p>
+                </article>
+                <span class="timeline-arrow"><i class="bi bi-arrow-right"></i></span>
+                <article class="process-step">
+                    <span class="step-number">05</span>
+                    <span class="step-icon"><i class="bi bi-award"></i></span>
+                    <h3>Certificate Issued</h3>
+                    <p>Receive your official DPIIT Certificate.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-padding" aria-labelledby="why-us-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Our Commitment</span>
+                <h2 id="why-us-title">Why Choose Business Registration Solutions?</h2>
+                <p>Empowering startups with professional registration guidance and hassle-free service.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-person-workspace"></i>
+                        <h3>Startup Specialists</h3>
+                        <p>Experienced advisors who understand DPIIT approval standards and innovation pitches.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-laptop"></i>
+                        <h3>100% Online &amp; Paperless</h3>
+                        <p>Complete the entire process remotely from anywhere in India without office visits.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-award"></i>
+                        <h3>High Approval Rate</h3>
+                        <p>Meticulous review of innovation details to ensure your application meets government criteria.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-lightning-charge"></i>
+                        <h3>Fast Turnaround</h3>
+                        <p>Prompt application preparation and immediate submission on the Startup India portal.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-headset"></i>
+                        <h3>End-to-End Support</h3>
+                        <p>Guidance beyond DPIIT, including Tax Exemption (80-IAC) and IP filing assistance.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card">
+                        <i class="bi bi-receipt"></i>
+                        <h3>Transparent Pricing</h3>
+                        <p>Clear, fixed pricing with no hidden charges or unexpected surprise fees.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-padding light-section" aria-labelledby="faq-title">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="section-heading text-center mx-auto">
+                        <span class="eyebrow">Common Questions</span>
+                        <h2 id="faq-title">Startup India Registration FAQs</h2>
+                    </div>
+                    <div class="accordion faq-accordion" id="startupFaq">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="sFaq1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sAns1">
+                                    What is DPIIT Recognition?
+                                </button>
+                            </h3>
+                            <div id="sAns1" class="accordion-collapse collapse show" data-bs-parent="#startupFaq">
+                                <div class="accordion-body">
+                                    DPIIT Recognition is an official certificate issued by the Department for Promotion of Industry and Internal Trade, Government of India, recognizing your company as an eligible startup entitled to government benefits.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="sFaq2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sAns2">
+                                    Is a Sole Proprietorship eligible for Startup India Recognition?
+                                </button>
+                            </h3>
+                            <div id="sAns2" class="accordion-collapse collapse" data-bs-parent="#startupFaq">
+                                <div class="accordion-body">
+                                    No. As per government guidelines, only Private Limited Companies, Registered Partnerships, and LLPs are eligible for DPIIT Startup Recognition. We can assist you in converting or incorporating your business into an eligible entity structure.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="sFaq3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sAns3">
+                                    How long does it take to get the DPIIT Certificate?
+                                </button>
+                            </h3>
+                            <div id="sAns3" class="accordion-collapse collapse" data-bs-parent="#startupFaq">
+                                <div class="accordion-body">
+                                    Once your application and innovation pitch are submitted accurately, DPIIT usually issues the recognition certificate within 2 to 5 working days, subject to government processing times.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="sFaq4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sAns4">
+                                    What is the Section 80-IAC tax exemption?
+                                </button>
+                            </h3>
+                            <div id="sAns4" class="accordion-collapse collapse" data-bs-parent="#startupFaq">
+                                <div class="accordion-body">
+                                    Section 80-IAC provides recognized startups with a 100% income tax exemption for 3 consecutive financial years out of their first 10 years of incorporation. An additional application to the Inter-Ministerial Board (IMB) is required for this exemption.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="sFaq5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sAns5">
+                                    Is there any government fee for DPIIT Recognition?
+                                </button>
+                            </h3>
+                            <div id="sAns5" class="accordion-collapse collapse" data-bs-parent="#startupFaq">
+                                <div class="accordion-body">
+                                    No, the Government of India charges zero fee for applying for DPIIT Recognition on the official Startup India portal. Our professional fee is solely for expert advisory, pitch writing refinement, document verification, and submission handling.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="sFaq6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sAns6">
+                                    Can existing businesses apply for DPIIT Recognition?
+                                </button>
+                            </h3>
+                            <div id="sAns6" class="accordion-collapse collapse" data-bs-parent="#startupFaq">
+                                <div class="accordion-body">
+                                    Yes, existing entities incorporated within the last 10 years with a turnover under ₹100 Crore and engaged in innovative products/services can apply for DPIIT recognition.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <!-- Pricing values will later be fetched dynamically from the database. -->
+    <section class="section-padding" aria-labelledby="pricing-title">
+        <div class="container">
+            <div class="section-heading text-center mx-auto">
+                <span class="eyebrow">Professional Assistance</span>
+                <h2 id="pricing-title">Startup India Registration Packages</h2>
+                <p>Choose an assisted service package tailored to your startup's stage and requirement.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <section class="pricing-card">
+                        <h3>Basic</h3>
+                        <p class="price">₹XXX</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Eligibility &amp; Document Review</li>
+                            <li><i class="bi bi-check2"></i> Basic Innovation Pitch Drafting</li>
+                            <li><i class="bi bi-check2"></i> DPIIT Portal Application Filing</li>
+                            <li><i class="bi bi-check2"></i> Status Tracking &amp; Certificate Delivery</li>
+                        </ul>
+                        <a class="btn btn-outline-primary w-100" href="{% url 'contact' %}">Choose Basic</a>
+                    </section>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <section class="pricing-card pricing-card-featured">
+                        <span>Most Popular</span>
+                        <h3>Standard</h3>
+                        <p class="price">₹XXX</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Detailed Pitch &amp; Business Deck Structuring</li>
+                            <li><i class="bi bi-check2"></i> Complete Document Verification</li>
+                            <li><i class="bi bi-check2"></i> Priority DPIIT Application Filing</li>
+                            <li><i class="bi bi-check2"></i> Fast-Track IP Filing Advisory</li>
+                            <li><i class="bi bi-check2"></i> Dedicated Startup Advisor</li>
+                        </ul>
+                        <a class="btn btn-success w-100" href="{% url 'contact' %}">Choose Standard</a>
+                    </section>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <section class="pricing-card">
+                        <h3>Premium</h3>
+                        <p class="price">₹XXX</p>
+                        <ul>
+                            <li><i class="bi bi-check2"></i> Complete DPIIT Recognition Filing</li>
+                            <li><i class="bi bi-check2"></i> Section 80-IAC Tax Exemption Application</li>
+                            <li><i class="bi bi-check2"></i> MSME / Udyam Integration</li>
+                            <li><i class="bi bi-check2"></i> Trademark / IP Filing Assistance</li>
+                            <li><i class="bi bi-check2"></i> VIP Priority Desk Support</li>
+                        </ul>
+                        <a class="btn btn-outline-primary w-100" href="{% url 'contact' %}">Choose Premium</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strong CTA Section -->
+    <section class="cta-section" aria-labelledby="startup-cta">
+        <div class="container">
+            <div class="cta-content text-center">
+                <span class="eyebrow eyebrow-light">Take the Next Step</span>
+                <h2 id="startup-cta">Ready to Get Your Startup India DPIIT Recognition?</h2>
+                <p>Join thousands of successful Indian startups. Unlock tax holidays, patent rebates, and government tender benefits today with expert guidance.</p>
+                <div class="d-flex justify-content-center flex-wrap gap-3">
+                    <a class="btn btn-light btn-lg" href="{% url 'contact' %}">Apply Now</a>
+                    <a class="btn btn-outline-light btn-lg" href="tel:9457509243"><i class="bi bi-telephone-fill"></i> Call Now</a>
+                    <a class="btn btn-outline-light btn-lg" href="https://wa.me/919457509243" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+{% endblock %}
